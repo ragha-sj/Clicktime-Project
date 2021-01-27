@@ -22,16 +22,16 @@ namespace ClickTimeProject
             txtZipcode = new ElementLocator(Locator.Id, "zipcode"),
             txtComments = new ElementLocator(Locator.Id, "comments"),
             btnSubmit = new ElementLocator(Locator.Id, "Submit1"),
-            lblMessage = new ElementLocator(Locator.XPath, "//*[contains(text(),'Ragha, your feedback has been submitted. Thanks for contacting us!')]");
+            lblMessage = new ElementLocator(Locator.XPath, "//*[contains(text(),'Ragha, your feedback has been submitted. Thanks for contacting us!')]"),
+            lblErrMessage = new ElementLocator(Locator.XPath, "//*[contains(text(),'Some fields were left blank. Please complete the form and try again.')]");
 
-        
+        ChromeDriver driver = new ChromeDriver(@"C:\Users\rmulbagal\source\repos\Google\Google\WebDrivers\Chrome");
         public void FormSubmit(String url, String Name, String Email, String Zipcode, String Comments)
         {
             bool bLbl, btxtName, btxtEmail, btxtZipcode, btxtComments, bbtnSubmit, bMsg = false;
             try
             {
-                
-                ChromeDriver driver = new ChromeDriver(@"C:\Users\rmulbagal\source\repos\Google\Google\WebDrivers\Chrome");
+                         
 
                 //Navigating to the URL
                 driver.Navigate().GoToUrl(url);
@@ -73,6 +73,36 @@ namespace ClickTimeProject
             {
                 Console.WriteLine(e.Message);
             }
+
+        }
+        public void BlankFieldSubmitForm(String url,String Name,String Zipcode,String Comments)
+        {
+            bool bErrMsg = false;
+            try
+            {
+                //Navigate to the URL
+                driver.Navigate().GoToUrl(url);
+               
+                //Waiting for the page to load
+                Thread.Sleep(4000);
+
+                //Entering values in all the fields except Email
+                driver.FindElement(By.Id(txtName.Value)).SendKeys(Name);
+                driver.FindElement(By.Id(txtZipcode.Value)).SendKeys(Zipcode);
+                driver.FindElement(By.Id(txtComments.Value)).SendKeys(Comments);
+                driver.FindElement(By.Id(btnSubmit.Value)).Click();
+                bErrMsg = driver.FindElement(By.XPath(lblErrMessage.Value)).Displayed;
+                Assert.IsTrue(bErrMsg);
+
+                //Closing the Browser
+                driver.Quit();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
         }
       
     }

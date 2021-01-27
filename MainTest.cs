@@ -18,14 +18,21 @@ namespace ClickTimeProject
     public class MainTest
     {
         
+         
+        SubmitForm form = new SubmitForm();
+
         [Test]
         public void CallSubmitForm()
         {
-            SubmitForm form = new SubmitForm();
+            
             form.FormSubmit("https://login.clicktime.com/qa/", "Ragha", "ragha.sj@gmail.com", "55446", "Submitting Feedback Form");
             
         }
-      
+        [Test]
+        public void CallBlankFieldSubmitForm()
+        {
+            form.BlankFieldSubmitForm("https://login.clicktime.com/qa/", "Ragha", "55446", "Submitting Feedback Form");
+        }
     }
 
 
