@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--BaseConfig main node-->
+<BaseConfig>
+  <!--Global Environment Setting Used for all Projects, set #text to desired value-->
+  <GlobalEnv desc="Environment to run tests against the nest attributes show possible values" desc1="Set text of this node for enviroment to run tests against" desc2="Note GlobalEnv can be overridden at Project level and Finally via command line">ti-prod<!--Common Environments For ProAg Programs--><CommonForAllProjects desc="use attribute value not name" ENV-QA="qa" ENV-UAT="uat" /><!--Environments For ProAgWorks Only--><ProAgWorksOnly desc="use attribute value not name" ENV-PROD="prod" ENV-SI-PROD="si-prod" ENV-TI-PROD="ti-prod" ENV-SIUAT="si-uat" ENV-TIUAT="ti-uat" ENV-TRXUAT="trx-uat" ENV-HOTFIX="hotfix" ENV-SI-HOTFIX="si-hf" ENV-TI-HOTFIX="ti-hf" ENV-MODEL-OFFICE="modeloffice" ENV-SI-MODEL-OFFICE="si-mo" ENV-DEMO="demo" ENV-TRAINING="training" ENV-TEST-AUTO="ta" ENV-QA-TRUNK-NotPublicYet="qa-trunk" ENV-DEV="dev" ENV-TUNK-DEV-NotPublicYet="dev-trunk" ENV-SI-DEV="si-dev" ENV-TI-DEV="ti-dev" /><!--Miscellaneous Environments--><MiscEnvs desc="Performance Environments - Ask Jeff G will we keep or create more of these" ENV-PERF="perf" /><!--EnvNames creates a Dictionary<string,string> in code--><EnvNames desc="These nodes are loaded into Dictionary&lt;string,string&gt; Node name is key, Node text is value" desc1=" Can be used in code to check if set env matches env from list"><EnvProd>prod</EnvProd><EnvUat>uat</EnvUat><EnvQa>qa</EnvQa><EnvDev>dev</EnvDev><EnvProdSi>si-prod</EnvProdSi><EnvProdTi>ti-prod</EnvProdTi><EnvUatSi>si-uat</EnvUatSi><EnvUatTrx>trx-uat</EnvUatTrx><EnvHotFix>hotfix</EnvHotFix><EnvHotFixSi>si-hf</EnvHotFixSi><EnvHotFixTi>ti-hf</EnvHotFixTi><EnvModelOffice>modeloffice</EnvModelOffice><EnvModelOfficeSi>si-mo</EnvModelOfficeSi><EnvDemo>demo</EnvDemo><EnvTraining>training</EnvTraining><EnvTestAuto>ta</EnvTestAuto><EnvQaTrunk>qa-trunk</EnvQaTrunk><EnvDevTrunk>dev-trunk</EnvDevTrunk><EnvDevSi>si-dev</EnvDevSi><EnvDevTi>ti-dev</EnvDevTi></EnvNames></GlobalEnv>
+  <!--Possible fixture names from AutoFixtures.xml and description of fixture nodes under the name-->
+  <FixtureDescriptions desc="Attribute name is Fixture name, Attribute value is description of what fixture nodes exist under the name" RunDebug="Local Chrome Browser Only" RunDebugChromeEmu="Build Debug Mobile Device Tests, Starts Chome in mobile emulation mode" RunLocal-MyProAgAll="Local Run All windows 10 browsers Chrome, Firefox, Edge and IE11, Chrome Mobile Emulator iPhone X" RunLocal-ChromeFirefoxEdgeIE11="Local Run All windows 10 browsers Chrome, Firefox, Edge and IE11" RunLocal-Chrome-IE11="Most often used browsers Chrome and IE-11 local execution" RunMixed-Chrome-IE11="Mixed excutionMost often used browsers Local Chrome and Remote IE-11" RunMixed-ChromeFirefox-SafariEdgeIE11="Mixed All desktop Browsers Local Chrome Firefox, Remote Safari, Edge IE-11" RunAllRemoteDesktopBrws="All Remote Desktop Chrome, Firefox, IE-11, Edge and Safari" RunAllRemoteMyProAg1="All Remote Desktop Chrome, Firefox, IE-11, Edge and Safari. Devices ios and android" />
+  <!--SettingProject are specific to a project like MyProAg, ProAgMapping, ProAgQuoter, ProAgWorks, etc.-->
+  <SettingsProject>
+    <!--MyProAg Application-->
+    <MyProAgTests>
+      <!--MyProAg Project Execution settings-->
+      <!--Set name of fixture node to use -->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <FixturesNodeName desc="Current fixture used to execute MyProAg Tests RunAllRemoteMyProAg" desc1="below if you remove ExampleFixEnvNmOverride- from attribute name, if GlobalEn set to qa fixture RunLocal-ChromeFirefoxEdgeIE11 vs RunDebug" ExampleFixEnvNmOverride-qa="RunLocal-MyProAgAll">RunLocal-MyProAgAll</FixturesNodeName>
+      <!--Defined MyProAg ENV URL's-->
+      <ProjectEnvUrls>
+        <!--Production - Note only tests that are configured to run in prod will run, if not configured test will fail-->
+        <Production>
+          <PROD desc="MyProAg Productiont URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" prod="https://my.proag.com" />
+        </Production>
+        <!--NON Production Environments-->
+        <UAT-Environments>
+          <UAT desc="MyProAg UAT Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" uat="https://uat-my.proag.com/trunk" />
+        </UAT-Environments>
+        <QA-Environments>
+          <QA desc="MyProAg QA Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" qa="https://qa-my.proag.com/trunk" />
+        </QA-Environments>
+        <DEV-Environments>
+          <DEV desc="MyProAg DEV Environment URL NOT DEFINED YET" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" dev="" />
+        </DEV-Environments>
+      </ProjectEnvUrls>
+      <!--Override GlobalEnv no matter its value set #text, that env will always be used-->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <OverrideEnv desc="Override Global Environment to run tests against the nest attributes show possible values" desc1="If text value none no override else set text to env you wish to use override GlobalEv" desc2="note this list of attributes also states Env's that can be used for testing" desc3="See ProjecEnvUrls for possibe values, none or empty means no override" desc4="below if ExampleOverideEnvWhen- removed from attribute name, when GlobalEnv set to qa it would orverride to qa-trunk" ExampleOverideEnvWhen-qa="qa-trunk">none</OverrideEnv>
+      <!--Set retry on fail count-->
+      <OverrideRetryCount desc="Number of times to retry test if test fails, currently does not include unhandled exceptions" desc1="none or blank means no retry">none</OverrideRetryCount>
+    </MyProAgTests>
+    <!--ProAgMapping Application-->
+    <ProAgMapping>
+      <!--ProAgMapping Project Execution settings-->
+      <!--Set name of fixture node to use -->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <FixturesNodeName desc="Specifies fixtures node name in AutoFixture xml file  to use for execution RunAllRemoteDesktopBrws" desc1="below if you remove ExampleFixEnvNmOverride- from attribute name, if GlobalEn set to qa fixture RunLocal-ChromeFirefoxEdgeIE11 vs RunDebug" ExampleFixEnvNmOverride-qa="RunLocal-ChromeFirefoxEdgeIE11">RunLocal-ChromeFirefoxEdgeIE11</FixturesNodeName>
+      <!--Defined ProAgMapping ENV URL's-->
+      <ProjectEnvUrls>
+        <!--Production - Note only tests that are configured to run in prod will run, if not configured test will fail-->
+        <Production>
+          <PROD desc="ProAgMapping Productiont URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" prod="https://mapping.proag.com" />
+        </Production>
+        <!--NON Production Environments-->
+        <UAT-Environments>
+          <UAT desc="ProAgMapping UAT Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" uat="https://uat-mapping.proag.com/trunk" />
+        </UAT-Environments>
+        <QA-Environments>
+          <QA desc="ProAgMapping QA Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" qa="https://qa-mapping.proag.com/trunk" />
+        </QA-Environments>
+        <DEV-Environments>
+          <DEV desc="ProAgMapping DEV Environment URL NOT DEFINED YET" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" dev="" />
+        </DEV-Environments>
+      </ProjectEnvUrls>
+      <!--Override GlobalEnv no matter its value set #text, that env will always be used-->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <OverrideEnv desc="Override Global Environment to run tests against the nest attributes show possible values" desc1="If text value none no override else set text to env you wish to use override GlobalEv" desc2="note this list of attributes also states Env's that can be used for testing" desc3="See ProjecEnvUrls for possibe values, none or empty means no override" desc4="below if ExampleOverideEnvWhen- removed from attribute name, when GlobalEnv set to qa it would orverride to qa-trunk" ExampleOverideEnvWhen-qa="qa-trunk">none</OverrideEnv>
+      <!--Set retry on fail count-->
+      <OverrideRetryCount desc="Number of times to retry test if test fails, currently does not include unhandled exceptions" desc1="none or blank means no retry">none</OverrideRetryCount>
+    </ProAgMapping>
+    <!--ProAgQuoter Application-->
+    <ProAgQuoter>
+      <!--ProAgQuoter Project Execution settings-->
+      <!--Set name of Fixture node to use in AutoFixtures.xml-->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <FixturesNodeName desc="Specifies fixtures node name in AutFixture xml file  to use for execution RunAllRemoteDesktopBrws" desc1="below if you remove ExampleFixEnvNmOverride- from attribute name, if GlobalEn set to qa fixture RunLocal-ChromeFirefoxEdgeIE11 vs RunDebug" ExampleFixEnvNmOverride-qa="RunLocal-ChromeFirefoxEdgeIE11">RunLocal-ChromeFirefoxEdgeIE11</FixturesNodeName>
+      <!--Defined ProAgQuoter EVN URL's-->
+      <ProjectEnvUrls>
+        <!--Production - Note only tests that are configured to run in prod will run, if not configured test will fail-->
+        <Production>
+          <PROD desc="ProAgQuoter Productiont URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" prod="https://quote.proag.com" />
+        </Production>
+        <!--NON Production Environments-->
+        <UAT-Environments>
+          <UAT desc="ProAgQuoter UAT Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" uat="https://uat-quote.proag.com/trunk" />
+        </UAT-Environments>
+        <QA-Environments>
+          <QA desc="ProAgQuoter QA Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" qa="https://qa-quote.proag.com/trunk" />
+        </QA-Environments>
+        <DEV-Environments>
+          <DEV desc="ProAgQuoter DEV Environment URL" desc1="Must match text value set in GlobalEnv node or OverrideEnv node" dev="https://devint.hcch.com:6080/trunk" />
+        </DEV-Environments>
+      </ProjectEnvUrls>
+      <!--Override GlobalEnv no matter its value set #text, that env will always be used-->
+      <!--Override GlobalEnv only when it is set to a specific env, add attribute with name that would match a GlobalEnv value, set attribute value to env to use vs set GlobalEnv-->
+      <OverrideEnv desc="Override Global Environment to run tests against the nest attributes show possible values" desc1="If text value none no override else set text to env you wish to use override GlobalEv" desc2="note this list of attributes also states Env's that can be used for testing" desc3="See ProjecEnvUrls for possibe values, none or empty means no override" desc4="below if ExampleOverideEnvWhen- removed from attribute name, when GlobalEnv set to qa it would orverride to qa-trunk" ExampleOverideEnvWhen-qa="qa-trunk">none</OverrideEnv>
+      <!--Set retry on fail count-->
+      <OverrideRetryCount desc="Number of times to retry test if test fails, currently does not include unhandled exceptions" desc1="none or blank means no retry">none</OverrideRetryCount>
+    </ProAgQuoter>
+    <!--ProAgWorks Application-->
+    <ProAgWorks>
+      <!--ProAgWorks Project Execution settings-->
+      <!--Set name of fixture node to use -->
+      <!--Override fixture node for specified env by adding attribute with name of env and its value set to fixture name you want for just that env-->
+      <FixturesNodeName desc="Specifies fixtures node name in AutFixture xml file  to use for execution RunAllRemoteDesktopBrws RunLocal-ChromeFirefoxEdgeIE11" desc1="below if you remove ExampleFixEnvNmOverride- from name, if GlobalEn set to qa-trunk fixture RunLocal-ChromeFirefoxEdgeIE11 vs RunDebug" ExampleFixEnvNmOverride-qa-trunk="RunLocal-ChromeFirefoxEdgeIE11">RunLocal-ChromeFirefoxEdgeIE11</FixturesNodeName>
+      <!--Definded ProAgWroks ENV URL's -->
+      <ProjectEnvUrls desc="Enviroment URL's for ProAgWroks" desc1="Must match text value set in GlobalEnv node or OverrideEnv node">
+        <!--Production - Note only tests that are configured to run in prod will run, if not configured test will fail-->
+        <Production>
+          <PROD desc="Production" prod="https://proagworks.proag.com" />
+          <SI-PROD desc="Production SI - IA Solutions" si-prod="https://agworks.iaisolutions.com" />
+          <TI-PROD desc="Production TI - " ti-prod="https://processing.proag.com" />
+        </Production>
+        <!--NON Production Environments-->
+        <!--UAT Environments-->
+        <UAT-Enviroments>
+          <UAT desc="PL-UAT-XS Scrambled or PL-UAT-XS" uat="https://uat-proagworks.proag.com" />
+          <TRX-UAT desc="PL-UAT-TRX Transmissions or PL-UAT-TRX" trx-uat="https://trx-proagworks.proag.com" />
+          <SI-UAT desc="SI-UAT" si-uat="https://si-uat-proagworks.proag.com" />
+          <TI-UAT desc="TI-UAT " ti-uat="https://uat-processing.proag.com" />
+        </UAT-Enviroments>
+        <!--Hot Fix Environments-->
+        <HotFix-Environments>
+          <HotFix desc="PL-HotFix" hotfix="https://hotfix.proag.com" />
+          <SIHF desc="SI-HotFix" si-hf="https://si-hotfix.proag.com" />
+          <TIHF desc="TI-HotFix" ti-hf="https://ti-hotfix.proag.com" />
+        </HotFix-Environments>
+        <!--Model Office Environments-->
+        <ModelOffice-Environments>
+          <ModelOffice desc="PL-ModelOffice" modeloffice="https://modeloffice.proagworks.com" />
+          <SIMO desc="SI-ModelOffice" si-mo="https://si-modeloffice-proagworks.proag.com" />
+        </ModelOffice-Environments>
+        <!--Demo and Training Environments-->
+        <Demo-Training-Environments>
+          <Demo desc="PL-Demo" demo="https://demo-proagworks.proag.com" />
+          <Training desc="PL-Training" training="https://training.proagworks.com" />
+        </Demo-Training-Environments>
+        <!--Test Automation and QA Environments-->
+        <TA-QA-Environments>
+          <TA desc="PL-Test Automation or PL-Test Auto" ta="https://testautomation-proagworks.proag.com" />
+          <QA desc="PL-QA" qa="https://qa-proagworks.proag.com/portal" />
+          <QA-Trunk-Not-Public desc="QA-Trunk Not public Need In Win Sys32- Hosts File" desc1="IP and URL needed in hosts file: 172.16.106.213     qa-trunk-proagworks.com" qa-trunk=" https://qa-trunk-proagworksint.hcch.com/portal" />
+        </TA-QA-Environments>
+        <!--DEV Environments-->
+        <DEV-Environments>
+          <DEV desc="PL-DEV" dev="https://dev-proagworks.proag.com" />
+          <DEV-Trunk-Not-Public desc="DEV-Trunk Not public Need In Win Sys32- Hosts File" desc1="IP and URL needed in hosts file: 172.16.106.146     dev-trunk-proagworks.com" dev-trunk="https://dev-trunk-proagworksint.hcch.com/" />
+          <SI-DEV desc="SI-DEV - NOT WORKING" si-dev="https://si-dev-processing.proag.com" />
+          <TI-DEV desc="TI-DEV - NOT WORKING" ti-dev="https://ti-dev-processing.proag.com" />
+        </DEV-Environments>
+        <!--Performance Environments - Ask Jeff G will we keep or create more of these-->
+        <PERF-Environments>
+          <PERF desc="Perfromance" perf="https://perf-proagworks.proag.com" />
+        </PERF-Environments>
+      </ProjectEnvUrls>
+      <!--Overide GlobalEnv no matter its value set #text, that env will always be used-->
+      <!--Overide GlobalEnv only when it is set to a specific env, add attribute with name that would match a GlobalEnv value, set attribute value to env to use vs set GlobalEnv-->
+      <OverrideEnv desc="Override Global Environment to run tests against the nest attributes show possible values" desc1="If text value none no override else set text to env you wish to use override GlobalEv" desc2="note this list of attributes also states Env's that can be used for testing" desc3="See ProjecEnvUrls for possibe values, none or empty means no override" desc4="below if ExampleOverideEnvWhen- removed from attribute name, when GlobalEnv set to qa it would orverride to qa-trunk" ExampleOverideEnvWhen-qa="qa-trunk">none</OverrideEnv>
+      <!--Set Test Retry Count if Test Fails-->
+      <OverrideRetryCount desc="Number of times to retry test if test fails, currently does not include unhandled exceptions" desc1="none or blank means no retry">none</OverrideRetryCount>
+      <!--Get Max Wait for CreateBatchReport to get expected status-->
+      <MaxWaitCreateBatchReport desc="Create Report max wait for expected status">100</MaxWaitCreateBatchReport>
+    </ProAgWorks>
+  </SettingsProject>
+  <!--SettingsGlobal are settings that affect how all tests run-->
+  <SettingsGlobal>
+    <!--Global ExecutionSettings All Projects-->
+    <!--RemoteBuildNameOverride - used if need to create remote session for technical support-->
+    <RemoteBuildNameOverride desc="Use this if you need to run test session that are need for remote provicers technical support team" desc1="Default Value is false, when true uses zTechSupport to override dynamic build naming" desc2="zTechSupport will be ignored and not deleted you can delete session under zTechSupport when support tickets are closed" desc3="Remeber to set name back to false once remote provider technical support sessions have be created" name="zSetNameYouWant">false</RemoteBuildNameOverride>
+    <!--RemoteBuildsRetainDays how long to keep result info on remote site-->
+    <RemoteBuildsRetainDays desc="The number of days to retain build infomration" desc1="Any project build that is =&gt; than text value of this node will be deleted ">11</RemoteBuildsRetainDays>
+    <!--Rollup Logging Turn it on or off-->
+    <LogToXmlRsltRollup desc="Global turn om Create xmlLogger Rollup Logging on or off" desc1="true Rollup Logging on, false Rollup Logging off " RollupLogging="true" />
+    <!--Set XmlLogger Levels, Sets for all threads and fixtures executed-->
+    <XmlLoggerLevels desc="Global turn xmlLogging levels on or off" desc1="true log level on, false log level off, Always on can't be turned on or off " LogTrace="true" LogDebug="true" LogInfo="true" LogWarn="Aways on" LogError="Always on" LogFatal="Always on"></XmlLoggerLevels>
+    <!--Set retry on fail count-->
+    <TestRetryCount desc="Number of times to retry test if test fails, currently does not include unhandled exceptions" desc1="value of 1 will not retry on fail 2 will retry 1 time if 1st run failed" desc2="none or blank same as value of 1 no retry">1</TestRetryCount>
+    <!--InternetInfo used for when you may hit zscaler -->
+    <InternetInfo>
+      <!--Info used if you hit zscaler If UseInfo true and hit zscaler then populated info used-->
+      <Info UseInfo="true" InfoU="~4175746f6d6174696f6e4c6162" InfoW="~51614c6162303830313230323021" InfoLand1="hcc.okta.com" InfoLand2="/sso" InfoLand3="login" />
+      <!--ProAg Application Logon Expected Landing Relative URL-->
+      <ProAgAppRelLogonLandPage UseLandAttrib="true" ProAgLogon="login.proag.com" SiLogon="/portal" TiLogon="/portal" />
+    </InternetInfo>
+    <!--Execution timeout settings-->
+    <LongTimeout desc="Find Element Long timeout in seconds">30</LongTimeout>
+    <MediumTimeout desc="Find Element Medium timeout in seconds">10</MediumTimeout>
+    <ShortTimeout desc="Find Element Short timeout in seconds">3</ShortTimeout>
+    <ImplicitlyWaitMilliseconds desc="Implicitly Wait in Milliseconds to use when driver created">200</ImplicitlyWaitMilliseconds>
+    <!--Folder and screen shot settings-->
+    <UseCurrentDirectory desc="Ocramaba functionality ProAg implementation always uses assembly path" desc1="Gets a value indicating whether use CurrentDirectory for path where assembly files are located">true</UseCurrentDirectory>
+    <GetPageSourceEnabled desc="Gets a value indicating whether get page source is enabled. False by default">true</GetPageSourceEnabled>
+    <PageSourceFolder desc="Gets the page source Relative folder key value">\TestOutput</PageSourceFolder>
+    <DownloadFolder desc="Gets the download relative folder key value">\TestOutput</DownloadFolder>
+    <ScreenShotFolder desc="Gets the screen shot relative folder key value">\TestOutput</ScreenShotFolder>
+    <XmlResultFolder desc="Gets the XmlResultLog relative folder key value">\TestOutput</XmlResultFolder>
+    <FullDesktopScreenShotEnabled desc="Gets a value indicating whether enable full desktop screen shot. False by default.">false</FullDesktopScreenShotEnabled>
+    <SeleniumScreenShotEnabled desc="Gets a value indicating whether enable full selenium screen shot. True by default.">true</SeleniumScreenShotEnabled>
+    <!--misc java script error loging, sync with angular, EnableEventFiringWebDriver-->
+    <JavaScriptErrorLogging desc="Gets a value indicating whether logs JavaScript errors from a browser. False by default.">false</JavaScriptErrorLogging>
+    <SynchronizationWithAngularEnabled desc="If true use perfrom wait for angular, false skip wait for angualr calls">true</SynchronizationWithAngularEnabled>
+    <EnableEventFiringWebDriver desc="Gets a value indicating whether enable EventFiringWebDriver" desc1="EventFiringWebDriver is a class and is used to wrap your webdriver around to throw events and WebDriverEventListner is an interface which you have to implement to catch the webdriver events." desc2="nlog trace level must be set to &quot;trace&quot; for at least one logger to see EventFiringWebDriver logs">false</EnableEventFiringWebDriver>
+    <Proxy desc="Use if proxy needed for connecting to brtowser to internet"></Proxy>
+  </SettingsGlobal>
+  <!--RemoteSite are settings to use when execution is using a remote fixtures-->
+  <RemoteSiteConfig desc="Remote site configuration information">
+    <!--RemoteSiteName the name of the remote site to execute tests on-->
+    <RemoteSiteName desc="Set #Text to name of remote site to use, casesensitive must match node case" desc1="Can overide this value at fixture level by adding attribute" desc2="OverrideRemoteSiteName and set to name of other site like SauceLabs" Browserstack="browserstack" SomeOtherRemoteSite="SomeOtherRemoteSite">Browserstack</RemoteSiteName>
+    <!--DesktopMaxWait the max time to wait for a remote desktop browser to start-->
+    <DesktopMaxWaitStart desc="Max time to wait for remote desktop browser driver to load">120</DesktopMaxWaitStart>
+    <!--MobileMaxWait the max time to wait for a remote mobile device browser to start-->
+    <MobileMaxWaitStart desc="Max time to wait for remote device driver to load">240</MobileMaxWaitStart>
+    <!--Browserstack specific BrowserStack settings to use if RemoteSiteName set Browserstack-->
+    <Browserstack desc="settings for browserstack remote testing site">
+      <RemoteProtocol desc="protocol to use when connecting to browserstack selenium grid http or https">http</RemoteProtocol>
+      <RemoteUri desc="remote site selenium grid address">hub-cloud.browserstack.com/wd/hub/</RemoteUri>
+      <RemoteUser desc="valid user for remote connection automationuser12">~6175746f6d6174696f6e757365723132</RemoteUser>
+      <RemoteKey desc="valid key to use for remote site connection">~797453375a4a695757344331597a715972767072</RemoteKey>
+      <RemoteProxy desc="Internal Proxy to connect through" example="http://web-example.replace.with.acutal.proxy-dns.com:3128">need proxy</RemoteProxy>
+      <RemoteApi desc="Api address to set results create runs etc">https://api.browserstack.com/automate</RemoteApi>
+      <DefaultsForSessions desc="Common site settings to use when to start a session">
+        <add desc="max time allowed between commands sent, should be greater the long timeout max 300" key="browserstack.idleTimeout" value="300"></add>
+        <add desc="Mask sensitive data to written to logs, comma seperated value  " key="browserstack.maskCommands" value="setvalues,getvalues,setcookies,getcookies" />
+        <add desc="Create recording of tests, true=record, false=do not record" key="browserstack.video" value="true" />
+        <add desc="Create selenium log of test, true=create, false=do not create" key="browserstack.debug" value="false" />
+        <add desc="Create run with debug on, takes sceen shots for all pages, true=debug on else false" key="browserstack.seleniumLogs" value="false" />
+        <add desc="set value to errors to turn on else any other string like off" key="browserstack.console" value="errors" />
+        <add desc="Create appium log of test if mobile device, true=create, false=do not create" key="browserstack.appiumLogs" value="false" />
+      </DefaultsForSessions>
+    </Browserstack>
+    <!--SomeotherSite specific settings to use if RemoteSiteName set to its name, Eample SauceLabs etc.-->
+    <SomeOtherRemoteSite desc="Settings to allow connectionSomeother site">
+      <RemoteProtocol desc="Remote Site Protoocol to use http or https">http</RemoteProtocol>
+      <RemoteUri desc="Uri address">need uri</RemoteUri>
+      <RemoteUser desc="valid user for remote connection automationuser12">need user</RemoteUser>
+      <RemoteKey desc="valid key to use for remote site connection">need key</RemoteKey>
+      <RemoteProxy desc="Internal Proxy to connect through" example="http://web-example.replace.with.acutal.proxy-dns.com:3128">need proxy</RemoteProxy>
+      <RemoteApi desc="Api address to set results create runs etc">need api</RemoteApi>
+    </SomeOtherRemoteSite>
+  </RemoteSiteConfig>
+  <!--DatabaseSettings are settings specific for Db Connections etc.-->
+  <DatabaseSettings desc="Database connection settings">
+    <!--Connection String settings to ise for all connections-->
+    <ConnectionString desc="databse connection strings with params">
+      <UseWindowsAuth desc="if ture use WinAuthConn else use SqlAutConn">true</UseWindowsAuth>
+      <WinAuthConn desc="Windows Auth Connection string">Data Source=^ServerNameHere^;Initial Catalog=^DatabaseNameHere^;Persist Security Info=True;Integrated Security=true;MultipleActiveResultSets=True;Connect Timeout=200; pooling='true'; Max Pool Size=200</WinAuthConn>
+      <SqlAuthConn desc="Sql Auth Connection string uid and pw needed, uid and pw can be encypted" uid="" pw="">Data Source=^ServerNameHere^;Initial Catalog=^DatabaseNameHere^;Persist Security Info=True;Integrated Security=false;MultipleActiveResultSets=True;Connect Timeout=200; pooling='true'; Max Pool Size=200;uid=^SqlUserHere^;pwd=^SqlPwHere^;</SqlAuthConn>
+    </ConnectionString>
+    <!--SqlCommandTextTimeout sets max wait for query to complete-->
+    <SqlCmdTextTimeout desc="Value used for CommandText.CommandTimeout, Max time to wait for  a query to finish" desc1=" value is in seconds, 120 = 2 min, 138 = 2 min 30 sec, 180 = 3 min, 200 =  3 min 33 sec">138</SqlCmdTextTimeout>
+    <!--EnvDbServerName sets DB Server \ Name to use based on final env value-->
+    <EnvDbServerName desc="Database servers and namesto use  based on environment" desc1="If DB server override needed for a particular env node add attribute with ProjectName" desc2="For added attrbute put in server name as attribute value" desc3="If atribute found matching project name it will override text value server name" desc4="To override server name for a Env create attribute node with same name as project, Example ProAgWorks" desc5="For the value of the override node add put in the server name, Example see node under qa ExampleProAgWorks" desc6="You may also need to override DbName for a Env to do this create a attribute with ProjName and DbName on the end" desc7="under qa node See ExampleProAgWorksDbName">
+      <ti-dev desc="Server Name to use when environment is ti-dev"></ti-dev>
+      <si-dev desc="Server Name to use when environment is si-dev"></si-dev>
+      <dev-trunk desc="Server Name to use when environment is dev" PAWDevTrunkOverrideDesc="Override for ProAgWorks DB when running against dev-trunk" ProAgWorks="USHOUKDKSQL2D\DEV" ProAgWorksDbName="AgWorksSubScriber">USTXHOUND1-D\PROAGOLTPDEV</dev-trunk>
+      <dev desc="Server Name to use when environment is dev" PAWDevTrunkOverrideDesc="Override for ProAgWorks DB when running against dev-trunk" ProAgWorks="USHOUKDKSQL2D\DEV" ProAgWorksDbName="AgWorksSubScriber">USTXHOUND1-D\PROAGOLTPDEV</dev>
+      <qa-trunk desc="Server Name to use when environment is qa">USHOUKDKSQL1T\TEST</qa-trunk>
+      <qa desc="Server Name to use when environment is qa" ExamplePAWOverrideDesc="Override for ProAgWorks DB when running against qa" ProAgWorks="USHOUKDKSQL1T\TEST" ProAgWorkDbName="AgWorksSubscriber" MyProAgTests="USHOUKDKSQL1T\TEST" MyProAgTestsDbName="AgWorksSubscriber">USTXHOUND1-T\PROAGOLTPQA</qa>
+      <ta desc="Server Name to use when environment is testautomation">USTXHOUTD1-X\PROAGOLTPTA</ta>
+      <uat desc="Server Name to use when environment is uat">USTXHOUND1-X\PROAGOLTPUAT</uat>
+      <trx-uat desc="Server Name to use when environment is uat">USTXHOUAW1-X\PROAGOLTPUAT</trx-uat>
+      <si-uat desc="Server Name to use when environment is uat"></si-uat>
+      <ti-uat desc="Server Name to use when environment is uat"></ti-uat>
+      <hotfix desc="Server Name to use when environment is hotfix"></hotfix>
+      <si-hf desc="Server Name to use when environment is hotfix"></si-hf>
+      <ti-hf desc="Server Name to use when environment is hotfix"></ti-hf>
+      <modeloffice desc="Server Name to use when environment is model office"></modeloffice>
+      <si-mo desc="Server Name to use when environment is model office"></si-mo>
+      <demo desc="Server Name to use when environment is demo"></demo>
+      <training desc="Server Name to use when environment is training"></training>
+      <perf desc="Server Name to use when environment is dev" DbName="AgWorksSubscriber" DbNameReplace="AgWorksCompany">USTXHOUND1-XP\PROAGOLTPPERF</perf>
+      <prod desc="Server Name to use when environment is production"></prod>
+      <si-prod desc="Server Name to use when environment is production" />
+      <ti-prod desc="Server Name to use when environment is production" />
+    </EnvDbServerName>
+    <!--ResultDbServerName sets  result DB Server \ Name to use for test result logging-->
+    <!--NOTE NOT IMPLEMENTED YET-->
+    <ResultDbServerName desc="Test Result Databases" />
+  </DatabaseSettings>
+</BaseConfig>

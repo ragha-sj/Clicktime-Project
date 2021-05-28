@@ -1,0 +1,953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseConfig>
+  <Fixtures desc="Fixtures to use for run and debug run&#xD;&#xA;Run and DebugRun for Desktop Browsers use: &#xD;&#xA;from test [TestFixtureSource(typeof(FixtureConfig), &quot;FixtureArgsWeb&quot;)]&#xD;&#xA;RunTux and DebugRunTux for Mobile Browsers use: &#xD;&#xA;from test [TestFixtureSource(typeof(TuxFixtureConfig), &quot;FixtureArgsTux&quot;)]">
+    <RunDebug desc="These fixtures used for desktop browser debug run">
+      <Fixture desc="Local Chrome" FixName="Chrome" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+    </RunDebug>
+    <LocChrome desc="Local Chome only">
+      <Fixture desc="Local Chrome" FixName="Chrome" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+    </LocChrome>
+    <LocChromeHeadless desc="Local Chome only">
+      <Fixture desc="Local Chrome Headless Mode" FixName="ChromeHeadless" LocalOrRemote="Local" Os="" OsVer="" BrowserType="ChromeHeadless" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+    </LocChromeHeadless>
+    <LocFirefox desc="Local Firefox only">
+      <Fixture desc="Local Firefox" FixName="Firefox" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseLegacyImplementation" value="false" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+    </LocFirefox>
+    <LocEdge desc="Local Edge only">
+      <Fixture desc="Local Edge OS Must be Windows 10" FixName="Edge" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseInPrivateBrowsing" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+    </LocEdge>
+    <LocIE desc="Local IE-11 only">
+      <Fixture LocalOrRemote="Local" FixName="IE11" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+          <add key="acceptSslCerts" value="true" />
+          <add key="ElementScrollBehavior" value="Bottom" />
+          <add key="EnableNativeEvents" value="true" />
+          <add key="EnablePersistentHover" value="true" />
+          <add key="EnsureCleanSession" value="false" />
+          <add key="ForceCreateProcessApi" value="false" />
+          <add key="ForceShellWindowApi" value="false" />
+          <add key="IgnoreZoomLevel" value="false" />
+          <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="RequireWindowFocus" value="true" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UsePerProcessProxy" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+    </LocIE>
+    <RunDebugChromeEmu desc="These fixtures used for desktop browser debug run">
+      <Fixture desc="Local Chrome Mobile Emulation" FixName="CrMobileEmu" LocalOrRemote="Local" Os="" OsVer="" BrowserType="ChromeEmulation" BrowserVer="" DeviceType="Mobile" DeviceName="" CeName="iPhone X" CeWidth="375" CeHeight="812">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+    </RunDebugChromeEmu>
+    <RunLocal-ChromeFirefoxEdgeIE11 desc="Local Run All windows 10 browsers Chrome, Firefox, Edge and IE11">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Local Firefox" FixName="Firefox" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseLegacyImplementation" value="false" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Local Edge OS Must be Windows 10" FixName="Edge" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseInPrivateBrowsing" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture LocalOrRemote="Local" FixName="IE11" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+          <add key="acceptSslCerts" value="true" />
+          <add key="ElementScrollBehavior" value="Bottom" />
+          <add key="EnableNativeEvents" value="true" />
+          <add key="EnablePersistentHover" value="true" />
+          <add key="EnsureCleanSession" value="false" />
+          <add key="ForceCreateProcessApi" value="false" />
+          <add key="ForceShellWindowApi" value="false" />
+          <add key="IgnoreZoomLevel" value="false" />
+          <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="RequireWindowFocus" value="true" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UsePerProcessProxy" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunLocal-ChromeFirefoxEdgeIE11>
+    <RunLocal-ChromeEdgeIE11 desc="Local Run All windows 10 browsers Chrome, Firefox, Edge and IE11">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Local Edge OS Must be Windows 10" FixName="Edge" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseInPrivateBrowsing" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture LocalOrRemote="Local" FixName="IE11" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+          <add key="acceptSslCerts" value="true" />
+          <add key="ElementScrollBehavior" value="Bottom" />
+          <add key="EnableNativeEvents" value="true" />
+          <add key="EnablePersistentHover" value="true" />
+          <add key="EnsureCleanSession" value="false" />
+          <add key="ForceCreateProcessApi" value="false" />
+          <add key="ForceShellWindowApi" value="false" />
+          <add key="IgnoreZoomLevel" value="false" />
+          <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="RequireWindowFocus" value="true" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UsePerProcessProxy" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunLocal-ChromeEdgeIE11>
+    <RunLocal-MyProAgAll desc="Local Run All windows 10 browsers Chrome, Firefox, Edge and IE11">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture LocalOrRemote="Local" FixName="IE11" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+          <add key="acceptSslCerts" value="true" />
+          <add key="ElementScrollBehavior" value="Bottom" />
+          <add key="EnableNativeEvents" value="true" />
+          <add key="EnablePersistentHover" value="true" />
+          <add key="EnsureCleanSession" value="false" />
+          <add key="ForceCreateProcessApi" value="false" />
+          <add key="ForceShellWindowApi" value="false" />
+          <add key="IgnoreZoomLevel" value="false" />
+          <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="RequireWindowFocus" value="true" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UsePerProcessProxy" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Local Firefox" FixName="Firefox" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseLegacyImplementation" value="false" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Local Edge OS Must be Windows 10" FixName="Edge" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseInPrivateBrowsing" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Local Chrome Mobile Emulation" FixName="CrMobileEmu" LocalOrRemote="Local" Os="" OsVer="" BrowserType="ChromeEmulation" BrowserVer="" DeviceType="Mobile" DeviceName="" CeName="iPhone X" CeWidth="375" CeHeight="812">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+    </RunLocal-MyProAgAll>
+    <RunLocal-Chrome-IE11 desc="Most often used browsers Chrome and IE-11 local execution">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture LocalOrRemote="Local" FixName="IE11" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+          <add key="acceptSslCerts" value="true" />
+          <add key="ElementScrollBehavior" value="Bottom" />
+          <add key="EnableNativeEvents" value="true" />
+          <add key="EnablePersistentHover" value="true" />
+          <add key="EnsureCleanSession" value="true" />
+          <add key="ForceCreateProcessApi" value="false" />
+          <add key="ForceShellWindowApi" value="false" />
+          <add key="IgnoreZoomLevel" value="false" />
+          <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="RequireWindowFocus" value="true" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UsePerProcessProxy" value="false" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunLocal-Chrome-IE11>
+    <RunRemote-Chrome-IE11 desc="Most often used browsers Chrome and IE-11 Remote execution">
+      <Fixture desc="Win10CrLatest" FixName="BsWin10CrLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Chrome" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunRemote-Chrome-IE11>
+    <RunMixed-Chrome-IE11 desc="Mixed excutionMost often used browsers Local Chrome and Remote IE-11">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunMixed-Chrome-IE11>
+    <RunMixed-ChromeFirefox-SafariEdgeIE11 desc="Mixed All desktop Browsers Local Chrome Firefox, Remote Safari, Edge IE-11">
+      <Fixture LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="LeaveBrowserRunning" value="false" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Local Firefox" FixName="Firefox" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+        <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+          <add key="AcceptInsecureCertificates" value="true" />
+          <add key="PageLoadStrategy" value="Normal" />
+          <add key="UnhandledPromptBehavior" value="Default" />
+          <add key="UseLegacyImplementation" value="false" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Browserstack Windows 10 Edge Latest" FixName="BsWin10EgLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.edge.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstack OSX Catalina Safari 13" FixName="BsOsxCatalinaSf13" LocalOrRemote="Remote" Os="OS X" OsVer="Catalina" BrowserType="Safari" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="browserstack.safari.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunMixed-ChromeFirefox-SafariEdgeIE11>
+    <RunAllRemoteDesktopBrws desc="All Remote Desktop Chrome, Firefox, IE-11, Edge and Safari">
+      <Fixture desc="Win10CrLatest" FixName="BsWin10CrLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Chrome" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Windows 10 Firefox Latest" FixName="BsWin10FfLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Firefox" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Browserstack Windows 10 Edge Latest" FixName="BsWin10EgLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.edge.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstack OSX Catalina Safari 13" FixName="BsOsxCatalinaSf13" LocalOrRemote="Remote" Os="OS X" OsVer="Catalina" BrowserType="Safari" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="browserstack.safari.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunAllRemoteDesktopBrws>
+    <RunAllRemoteMyProAg desc="All Remote Desktop Chrome, Firefox, IE-11, Edge and Safari. Devices ios and android">
+      <Fixture desc="Win10CrLatest" FixName="BsWin10CrLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Chrome" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Windows 10 Firefox Latest" FixName="BsWin10FfLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Firefox" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Browserstack Windows 10 Edge Latest" FixName="BsWin10EgLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.edge.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstack OSX Catalina Safari 13" FixName="BsOsxCatalinaSf13" LocalOrRemote="Remote" Os="OS X" OsVer="Catalina" BrowserType="Safari" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="browserstack.safari.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <IOS8PlusFixture desc="IOS iPhone 8 Plus" FixName="BsIOS-11-iPhone8Plus" LocalOrRemote="Remote" Os="IOS" OsVer="11" BrowserType="" BrowserVer="" DeviceType="iPhone" DeviceName="iPhone 8 Plus" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+      </IOS8PlusFixture>
+      <Fixture desc="IOS iPhone XS " FixName="BsIOSiPhoneXs13" LocalOrRemote="Remote" Os="IOS" OsVer="13" BrowserType="" BrowserVer="" DeviceType="iPhone" DeviceName="iPhone XS" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.appium_version" value="1.17.0" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Broserstack Android Phone Samsug Galaxy S9 Plus" FixName="BsAdrPhoneSamGxS9Plus" LocalOrRemote="Remote" Os="ANDROID" OsVer="9.0" BrowserType="" BrowserVer="" DeviceType="AdrPhone" DeviceName="Samsung Galaxy S9 Plus" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunAllRemoteMyProAg>
+    <RunBrowserstack desc="These fixtures for running remote browsers and devices.">
+      <Fixture desc="Win10CrLatest" FixName="BsWin10CrLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Chrome" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+          <add key="profile.default_content_settings.popups" value="0" />
+          <add key="download.prompt_for_download" value="false" />
+          <add key="credentials_enable_service" value="false" />
+          <add key="profile.password_manager_enabled" value="false" />
+        </Preferences>
+      </Fixture>
+      <Fixture desc="Windows 10 Firefox Latest" FixName="BsWin10FfLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Firefox" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+        <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+          <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+          <add key="signon.rememberSignons" value="false" />
+          <add key="browser.download.folderList" value="2" />
+          <add key="browser.download.managershowWhenStarting" value="false" />
+          <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+          <add key="pdfjs.disabled" value="true" />
+          <add key="plugin.scan.Acrobat" value="99.0" />
+          <add key="plugin.scan.plid.all" value="false" />
+        </Prefrences>
+      </Fixture>
+      <Fixture desc="Browserstack Windows 10 Edge Latest" FixName="BsWin10EgLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.edge.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstack OSX Catalina Safari 13" FixName="BsOsxCatalinaSf13" LocalOrRemote="Remote" Os="OS X" OsVer="Catalina" BrowserType="Safari" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="browserstack.safari.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Browserstack Windows 7 IE 11" FixName="BsWin7Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="7" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="1" />
+          <add key="browserstack.ie.enablePopups" value="true" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="IOS iPhone XS " FixName="BsIOSiPhoneXs13" LocalOrRemote="Remote" Os="IOS" OsVer="13" BrowserType="" BrowserVer="" DeviceType="iPhone" DeviceName="iPhone XS" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+      </Fixture>
+      <Fixture desc="Broserstack Android Phone Samsug Galaxy S9 Plus" FixName="BsAdrPhoneSamGxS9Plus" LocalOrRemote="Remote" Os="ANDROID" OsVer="9.0" BrowserType="" BrowserVer="" DeviceType="AdrPhone" DeviceName="Samsung Galaxy S9 Plus" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+        <AdditionalCaps>
+          <add key="acceptSslCerts" value="true" />
+          <add key="acceptInsecureCertificates" value="true" />
+          <add key="pageLoadStrategy" value="1" />
+          <add key="elementScrollBehavior" value="2" />
+        </AdditionalCaps>
+      </Fixture>
+    </RunBrowserstack>
+    <FixtureExamples>
+      <Local desc="Examples for local borwsers" desc1="Note Edge can only be run if you are on windows 10" desc2="Note local browsers do not use additonalCaps" desc3="To change browser options got to WebDrivers Class method CreateDriverOptions">
+        <Fixture desc="Local Chrome" LocalOrRemote="Local" FixName="Chrome" Os="" OsVer="" BrowserType="Chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+          <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+          </AdditionalCaps>
+          <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+            <add key="profile.default_content_settings.popups" value="0" />
+            <add key="download.prompt_for_download" value="false" />
+            <add key="credentials_enable_service" value="false" />
+            <add key="profile.password_manager_enabled" value="false" />
+          </Preferences>
+        </Fixture>
+        <Fixture desc="Local Firefox" FixName="Firefox" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+          <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UseLegacyImplementation" value="false" />
+          </AdditionalCaps>
+          <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+            <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+            <add key="signon.rememberSignons" value="false" />
+            <add key="browser.download.folderList" value="2" />
+            <add key="browser.download.managershowWhenStarting" value="false" />
+            <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+            <add key="pdfjs.disabled" value="true" />
+            <add key="plugin.scan.Acrobat" value="99.0" />
+            <add key="plugin.scan.plid.all" value="false" />
+          </Prefrences>
+        </Fixture>
+        <Fixture desc="Local IE-11" FixName="IE11" LocalOrRemote="Local" Os="" OsVer="" BrowserType="InternetExplorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+          <AdditionalCaps desc="IE-11 set in class instence InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+            <add key="acceptSslCerts" value="true" />
+            <add key="ElementScrollBehavior" value="Bottom" />
+            <add key="EnableNativeEvents" value="true" />
+            <add key="EnablePersistentHover" value="true" />
+            <add key="EnsureCleanSession" value="true" />
+            <add key="ForceCreateProcessApi" value="false" />
+            <add key="ForceShellWindowApi" value="false" />
+            <add key="IgnoreZoomLevel" value="false" />
+            <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="RequireWindowFocus" value="true" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UsePerProcessProxy" value="false" />
+          </AdditionalCaps>
+        </Fixture>
+        <Fixture desc="Local Edge OS Must be Windows 10" FixName="Edge" LocalOrRemote="Local" Os="" OsVer="" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="">
+          <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UseInPrivateBrowsing" value="false" />
+          </AdditionalCaps>
+        </Fixture>
+        <Fixture desc="Local Chrome Mobile Emulation" FixName="CrMobileEmu" LocalOrRemote="Local" Os="" OsVer="" BrowserType="ChromeEmulation" BrowserVer="" DeviceType="Mobile" DeviceName="" CeName="iPhone X" CeWidth="375" CeHeight="812">
+          <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+          </AdditionalCaps>
+          <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+            <add key="profile.default_content_settings.popups" value="0" />
+            <add key="download.prompt_for_download" value="false" />
+            <add key="credentials_enable_service" value="false" />
+            <add key="profile.password_manager_enabled" value="false" />
+          </Preferences>
+        </Fixture>
+        <Fixture desc="Local Chrome Mobile Emulation" FixName="CrMobileEmu" LocalOrRemote="Local" Os="" OsVer="" BrowserType="ChromeEmulation" BrowserVer="" DeviceType="Mobile" DeviceName="" CeName="iPhone 6/7/8" CeWidth="375" CeHeight="812">
+          <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+          </AdditionalCaps>
+          <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+            <add key="profile.default_content_settings.popups" value="0" />
+            <add key="download.prompt_for_download" value="false" />
+            <add key="credentials_enable_service" value="false" />
+            <add key="profile.password_manager_enabled" value="false" />
+          </Preferences>
+        </Fixture>
+      </Local>
+      <Remote>
+        <Browserstack desc="Examples Browerstack desktop">
+          <Fixture desc="Win10CrLatest" FixName="BsWin10CrLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Chrome" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+            </AdditionalCaps>
+            <Preferences desc="Chrome Preferences set in class instence ChromeOptions with AddUserProfilePreferences" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+              <add key="profile.default_content_settings.popups" value="0" />
+              <add key="download.prompt_for_download" value="false" />
+              <add key="credentials_enable_service" value="false" />
+              <add key="profile.password_manager_enabled" value="false" />
+            </Preferences>
+          </Fixture>
+          <Fixture desc="Windows 10 Firefox Latest" FixName="BsWin10FfLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Firefox" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+            </AdditionalCaps>
+            <Prefrences desc="Firefox Preferences set in class instence FirefoxOptions with SetPreferences">
+              <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+              <add key="signon.rememberSignons" value="false" />
+              <add key="browser.download.folderList" value="2" />
+              <add key="browser.download.managershowWhenStarting" value="false" />
+              <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+              <add key="pdfjs.disabled" value="true" />
+              <add key="plugin.scan.Acrobat" value="99.0" />
+              <add key="plugin.scan.plid.all" value="false" />
+            </Prefrences>
+          </Fixture>
+          <Fixture desc="Browserstack Windows 10 Edge Latest" FixName="BsWin10EgLatest" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+              <add key="browserstack.edge.enablePopups" value="true" />
+            </AdditionalCaps>
+          </Fixture>
+          <Fixture desc="Browserstacck Windows 10 Internet Explorer 11" FixName="BsWin10Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+              <add key="browserstack.ie.enablePopups" value="true" />
+            </AdditionalCaps>
+          </Fixture>
+          <Fixture desc="Browserstack OSX Catalina Safari 13" FixName="BsOsxCatalinaSf13" LocalOrRemote="Remote" Os="OS X" OsVer="Catalina" BrowserType="Safari" BrowserVer="Latest" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="browserstack.safari.enablePopups" value="true" />
+            </AdditionalCaps>
+          </Fixture>
+          <Fixture desc="Browserstack Windows 7 IE 11" FixName="BsWin7Ie11" LocalOrRemote="Remote" Os="Windows" OsVer="7" BrowserType="IE" BrowserVer="11.0" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="1" />
+              <add key="browserstack.ie.enablePopups" value="true" />
+            </AdditionalCaps>
+          </Fixture>
+        </Browserstack>
+        <CrossBrowserTesting desc="These fixtures used for desktop browser on CBT" desc1="Note CrossBrowserTesting we use additonalCaps" desc2="Changes can be made in RemoteCrossBrowserTesting Class method CreateBrowsertackCapabilites">
+          <Fixture desc="CBT Windows 10 IE 11" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Internet Explorer" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps platform="Windows 10" browserName="Internet Explorer" version="11" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" screenResolution="1366x768" />
+          </Fixture>
+          <Fixture desc="CBT Windows 10 Firefox" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Firefox" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps platform="Windows 10" browserName="Firefox" version="65" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" screenResolution="1366x768" />
+          </Fixture>
+          <Fixture desc="CBT Windows 10 Edge" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="Edge" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps platform="Windows 10" browserName="Edge" version="17" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" screenResolution="1366x768" />
+          </Fixture>
+          <Fixture desc="CBT Windows 10 Chrome" LocalOrRemote="Remote" Os="Windows" OsVer="10" BrowserType="chrome" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps platform="Windows 10" browserName="Chrome" version="72" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" screenResolution="1366x768" />
+          </Fixture>
+          <Fixture desc="CBT Mac OSX Safari" LocalOrRemote="Remote" Os="OSX" OsVer="10.13" BrowserType="safari" BrowserVer="" DeviceType="Desktop" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps platform="Mac OSX 10.13" browserName="Safari" version="11" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" screenResolution="1366x768" />
+          </Fixture>
+        </CrossBrowserTesting>
+      </Remote>
+      <RemoteDevice>
+        <Browserstack desc="Examples Browserstack devices">
+          <Fixture desc="IOS iPhone XS " FixName="BsIOSiPhoneXs13" LocalOrRemote="Remote" Os="IOS" OsVer="13" BrowserType="" BrowserVer="" DeviceType="iPhone" DeviceName="iPhone XS" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+            </AdditionalCaps>
+          </Fixture>
+          <Fixture desc="Broserstack Android Phone Samsug Galaxy S9 Plus" FixName="BsAdrPhoneSamGxS9Plus" LocalOrRemote="Remote" Os="ANDROID" OsVer="9.0" BrowserType="" BrowserVer="" DeviceType="AdrPhone" DeviceName="Samsung Galaxy S9 Plus" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="Browserstack">
+            <AdditionalCaps>
+              <add key="acceptSslCerts" value="true" />
+              <add key="acceptInsecureCertificates" value="true" />
+              <add key="pageLoadStrategy" value="1" />
+              <add key="elementScrollBehavior" value="2" />
+            </AdditionalCaps>
+          </Fixture>
+        </Browserstack>
+        <CrossBrowserTesting desc="These fixtures used for desktop browser on CBT" desc1="Note CrossBrowserTesting we use additonalCaps" desc2="Changes can be made in RemoteCrossBrowserTesting Class method CreateBrowsertackCapabilites">
+          <Fixture desc="CBT Android Galaxy S8" LocalOrRemote="Remote" Os="Android" OsVer="8.0" BrowserType="chrome" BrowserVer="" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps deviceName="Galaxy S8" platformName="Android" browserName="chrome" platformVersion="8.0" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" deviceOrientation="portrait" />
+          </Fixture>
+          <Fixture desc="CBT Android Nexus 9 Tablet" LocalOrRemote="Remote" Os="Android" OsVer="6.0" BrowserType="chrome" BrowserVer="" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps deviceName="Nexus 9" platformName="Android" browserName="chrome" platformVersion="6.0" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" deviceOrientation="portrait" />
+          </Fixture>
+          <Fixture desc="CBT IOS iPhone X Simulator" LocalOrRemote="Remote" Os="iOS" OsVer="11.0" BrowserType="safari" BrowserVer="" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps deviceName="iPhone X Simulator" platformName="iOS" browserName="safari" platformVersion="11.0" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" deviceOrientation="portrait" />
+          </Fixture>
+          <Fixture desc="CBT IOS iPad Pro Simulator" LocalOrRemote="Remote" Os="iOS" OsVer="11.0" BrowserType="safari" BrowserVer="" DeviceName="" CeName="" CeWidth="" CeHeight="" OverrideRemoteSiteName="CrossBrowserTesting">
+            <additionalCaps deviceName="iPad Pro Simulator" platformName="iOS" browserName="safari" platformVersion="11.0" pageLoadStrategy="1" elementScrollBehavior="1" acceptInsecureCerts="true" acceptSslCerts="true" deviceOrientation="portrait" />
+          </Fixture>
+        </CrossBrowserTesting>
+      </RemoteDevice>
+      <AdditionalCapsExample>
+        <AdditionalCaps desc="Template for additional caps structure">
+          <add key="capName" value="capValue" />
+          <add key="capName" value="capValue" />
+          <add key="capName" value="capValue" />
+          <add key="browserstack.idleTimeout" value="30" />
+          <add key="browserstack.seleniumLogs" value="true" />
+          <add key="browserstack.appiumLogs" value="true" />
+          <add key="browserstack.debug" value="true" />
+        </AdditionalCaps>
+        <IePossibleAdditionalCaps desc="Below are additional caps for IE-11 also known as options InternetExplorerOptions" desc1="The values for each option are set to there default" desc2="IE 11 does not have Extension or Preferences classes" desc3="These can be added to Fixture who's BrowerType is InternetExplorer">
+          <AdditionalCaps desc="IE-11  set in class InternetExplorerOptions" desc1="Note use acceptSslCerts for IE and not acceptInsecureCertificates like in other borwsers">
+            <add key="acceptSslCerts" value="true" />
+            <add key="BrowserCommandLineArguments" value="" />
+            <add key="ElementScrollBehavior" value="Bottom" />
+            <add key="EnableNativeEvents" value="true" />
+            <add key="EnablePersistentHover" value="true" />
+            <add key="EnsureCleanSession" value="true" />
+            <add key="FileUploadDialogTimeout" value="" />
+            <add key="ForceCreateProcessApi" value="false" />
+            <add key="ForceShellWindowApi" value="false" />
+            <add key="IgnoreZoomLevel" value="false" />
+            <add key="InitialBrowserUrl" value="" />
+            <add key="IntroduceInstabilityByIgnoringProtectedModeSettings" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="Proxy" value="" />
+            <add key="RequireWindowFocus" value="true" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UsePerProcessProxy" value="false" />
+          </AdditionalCaps>
+        </IePossibleAdditionalCaps>
+        <FirefoxPossibleCapsPreferences desc="Below are possible Firefox additonal caps also know as FirefoxOptions" desc1="Below also contains possible Firefox Preferences which are part of FirefoxOptions" desc2="These can be added to Fixture who's BrowerType is Firefox">
+          <AdditionalCaps desc="Firefox options set in class instence FirefoxOptions" desc1="To show Firefox Prefrences type About:support in Firefox address bar">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="BrowserExecutableLocation" value="" />
+            <add key="LogLevel" value="" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="Proxy" value="" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UseLegacyImplementation" value="false" />
+          </AdditionalCaps>
+          <Preferences desc="Firefox Preference set in class instence FirefoxOptions with SetPreferences">
+            <add key="toolkit.startup.max_resumed_crashes" value="999999" />
+            <add key="network.automatic-ntlm-auth.trusted-uris" value="" />
+            <add key="signon.rememberSignons" value="false" />
+            <add key="browser.download.folderList" value="2" />
+            <add key="browser.download.managershowWhenStarting" value="false" />
+            <add key="browser.helperApps.neverAsk.saveToDisk" value="application/vnd.ms-excel, application/x-msexcel, application/pdf, text/csv, text/html, application/octet-stream" />
+            <add key="pdfjs.disabled" value="true" />
+            <add key="plugin.scan.Acrobat" value="99.0" />
+            <add key="plugin.scan.plid.all" value="false" />
+          </Preferences>
+        </FirefoxPossibleCapsPreferences>
+        <ChromePossibleCapsPreferences desc="Below are possible Chrome additonal caps also know as ChromeOptions" desc1="Below also contains possible Chrome Preferences which are part of ChromeOptions" desc2="These can be added to Fixture who's BrowerType is Chrome">
+          <AdditionalCaps desc="Chrome options set in class instence ChromeOptions">
+            <add key="AcceptInsecureCertificates" value="true" />
+            <add key="Arguments" value="" />
+            <add key="BinaryLocation" value="" />
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="Proxy" value="" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+          </AdditionalCaps>
+          <Preferences desc="Chrome Preference set in class instence ChromeOptions with AddUserProfilePreference" desc1="To show possible Chrome Preferences, Options type chrome://flags in the address bar" desc2="For other chrome resource type chrome://about in the address bar" desc3="https://www.howtogeek.com/104631/find-hidden-features-on-chromes-internal-chrome-pages/">
+            <add key="profile.default_content_settings.popups" value="0" />
+            <add key="download.default_directory" value="" />
+            <add key="download.prompt_for_download" value="false" />
+            <add key="credentials_enable_service" value="false" />
+            <add key="profile.password_manager_enabled" value="false" />
+          </Preferences>
+        </ChromePossibleCapsPreferences>
+        <EdgePossibleAdditonalCaps desc="Below are possible Edge additonal caps also know as EdgeOptions" desc1="Edge does not have Preferences class or object that can be set" desc2="These can be added to Fixture who's BrowerType is Edge ">
+          <AdditionalCaps desc="Edge options set in class instence EdgeOptions">
+            <Outadd desc="Important this is not yet supported for EdgeOptions" key="AcceptInsecureCertificates" value="true" />
+            <add key="LeaveBrowserRunning" value="false" />
+            <add key="PageLoadStrategy" value="Normal" />
+            <add key="Proxy" value="" />
+            <add key="StartPage" value="" />
+            <add key="UnhandledPromptBehavior" value="Default" />
+            <add key="UseInPrivateBrowsing" value="false" />
+          </AdditionalCaps>
+        </EdgePossibleAdditonalCaps>
+      </AdditionalCapsExample>
+    </FixtureExamples>
+  </Fixtures>
+</BaseConfig>
