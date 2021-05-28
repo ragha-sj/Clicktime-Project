@@ -1,0 +1,325 @@
+<Proj-ProAgQuoter Env="ti-uat" Status="Failed" Executors="RMULBAGAL" MachineNames="PA-LT6BN94Q2" Start="11-20-2020 17:43:22.019" End="11-20-2020 17:43:28.468" Elapsed="00:00:00:06.449">
+  <Metrics SuitesPassed="0" SuitesFailed="1" SuitesTotal="1" FixturesPassed="0" FixturesFailed="1" FixturesTotal="1" TestsPassed="0" TestsFailed="1" TestsTotal="1" StepsPassed="6" StepsFailed="2" StepsTotal="8" WarnTotal="0" ErrorTotal="1" FatalTotal="6" TotalTestsReRuns="0">
+  </Metrics>
+  <MetricsTime IfSerialStart="11-20-2020 17:40:52.451" IfSerialEnd="" IfSerialElapsed="" ParallelElapsed="" ParallelTimeSave="">
+  </MetricsTime>
+  <QuoterSmokeTests Env="" Status="Failed" Executors="RMULBAGAL" MachineNames="PA-LT6BN94Q2" Start="11-20-2020 17:43:22.019" End="11-20-2020 17:43:28.468" Elapsed="00:00:00:06.449">
+    <Metrics FixturesPassed="0" FixturesFailed="1" FixturesTotal="1" TestsPassed="0" TestsFailed="1" TestsTotal="1" StepsPassed="6" StepsFailed="2" StepsTotal="8" WarnTotal="0" ErrorTotal="1" FatalTotal="6" TotalTestsReRuns="0">
+    </Metrics>
+    <MetricsTime IfSerialStart="" IfSerialEnd="" IfSerialElapsed="" ParallelElapsed="" ParallelTimeSave="">
+    </MetricsTime>
+    <WINDOWS_10 Env="ti-uat" Status="Failed" Executors="RMULBAGAL" MachineNames="PA-LT6BN94Q2" Start="11-20-2020 17:43:22.019" End="11-20-2020 17:43:28.468" Elapsed="00:00:00:06.449" OS="WINDOWS_10" OSVersion="10.0.18363.1.1">
+      <Metrics BrowsersPassed="0" BrowsersFailed="1" BrowsersTotal="1" TestsPassed="0" TestsFailed="1" TestsTotal="1" StepsPassed="6" StepsFailed="2" StepsTotal="8" WarnTotal="0" ErrorTotal="1" FatalTotal="6" TotalTestsReRuns="0">
+      </Metrics>
+      <MetricsTime IfSerialStart="" IfSerialEnd="" IfSerialElapsed="" ParallelElapsed="" ParallelTimeSave="">
+      </MetricsTime>
+      <EDGE Env="ti-uat" Status="Failed" Executors="RMULBAGAL" MachineNames="PA-LT6BN94Q2" Start="11-20-2020 17:43:22.019" End="11-20-2020 17:43:28.468" Elapsed="00:00:00:06.449" BrowserType="EDGE" BrowserVersion="86.0.622.69">
+        <Metrics TestsPassed="0" TestsFailed="1" TestsTotal="1" StepsPassed="6" StepsFailed="2" StepsTotal="8" WarnTotal="0" ErrorTotal="1" FatalTotal="6" TotalTestsReRuns="0">
+        </Metrics>
+        <MetricsTime IfSerialStart="" IfSerialEnd="" IfSerialElapsed="" ParallelElapsed="" ParallelTimeSave="">
+        </MetricsTime>
+        <LoginLogout Id="0-1007" TestDesc="Login and out ProAgQuoter" TfsIDs="" Env="ti-uat" Executor="RMULBAGAL" MachineName="PA-LT6BN94Q2" Fixture="locEdge" Status="Failed" LocalOrRemote="Local" RunTrys="1" Start="11-20-2020 17:43:22.019" End="11-20-2020 17:43:28.468" Elapsed="00:00:00:06.449" StepsPassed="6" StepsFailed="2" StepsTotal="8">
+          <xmlActions />
+          <xmlLog>
+            <Trace>11-20-2020 17:43:21.295 | Trace | :: :: :: :: :: :: OpenXml Read Worksheet: quoter Excel File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\Data\ProAgQuoterCreds.xlsx | Ocaramba.Helpers.ProAgXlsxReader.GetWorkflow | line: 761</Trace>
+            <Trace>11-20-2020 17:43:21.355 | Trace | :: :: :: :: :: :: detachedDocument created from Worksheet: quoter Excel File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\Data\ProAgQuoterCreds.xlsx | Ocaramba.Helpers.ProAgXlsxReader.GetWorkflow | line: 769</Trace>
+            <Trace>11-20-2020 17:43:21.468 | Trace | :: :: :: :: :: :: Created DataTable from Worksheet: quoter Excel File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\Data\ProAgQuoterCreds.xlsx | Ocaramba.Helpers.ProAgXlsxReader.GetWorkflow | line: 963</Trace>
+            <Info>11-20-2020 17:43:21.476 | Info | :: :: Read Excel file:C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\Data\ProAgQuoterCreds.xlsx worksheet quoter loaded into DataWorksheets.Tables | Ocaramba.Helpers.ProAgXlsxReader.ExcelLoadDataWorksheet | line: 363</Info>
+            <Trace>11-20-2020 17:43:21.486 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary dataSetTableName: ProAgQuoterCreds_quoter | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 476</Trace>
+            <Trace>11-20-2020 17:43:21.486 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary selectStatement: GroupAlias = 'CommonQuoter' | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 477</Trace>
+            <Trace>11-20-2020 17:43:21.527 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.528 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.529 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.529 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.530 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.530 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.531 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.531 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.532 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.532 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+            <Trace>11-20-2020 17:43:21.532 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary add data to dictionary row count: 10 | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 502</Trace>
+            <Trace>11-20-2020 17:43:21.536 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary returning dictionary with data | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 534</Trace>
+            <Info>11-20-2020 17:43:21.967 | Info | :: :: Skipped Getting DbUserId | Ocaramba.Helpers.ProAgSqlHelper.ProAgGetUserID | line: 702</Info>
+          </xmlLog>
+          <GetLocBrowserDriver Description="Start Local Driver for Browser Type: Edge" Status="Passed" Start="11-20-2020 17:43:22.050" End="11-20-2020 17:43:25.716" Elapsed="00:00:00:03.666">
+            <xmlActions />
+            <xmlLog>
+              <Trace>11-20-2020 17:43:22.163 | Trace | :: :: :: :: :: :: Set Additional Caps | Ocaramba.Helpers.ProAgDriverCreator.SetAddionalCaps | line: 2390</Trace>
+              <Trace>11-20-2020 17:43:22.177 | Trace | :: :: :: :: :: ::  Set Additional Cap key: LeaveBrowserRunning to value: false | Ocaramba.Helpers.ProAgDriverCreator.SetAddionalCaps | line: 2409</Trace>
+              <Trace>11-20-2020 17:43:22.229 | Trace | :: :: :: :: :: :: Setting Cap: LeaveBrowserRunning | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 674</Trace>
+              <Trace>11-20-2020 17:43:22.237 | Trace | :: :: :: :: :: :: Set LeaveBrowserRunning to: false | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 681</Trace>
+              <Trace>11-20-2020 17:43:22.247 | Trace | :: :: :: :: :: ::  Set Additional Cap key: PageLoadStrategy to value: Normal | Ocaramba.Helpers.ProAgDriverCreator.SetAddionalCaps | line: 2409</Trace>
+              <Trace>11-20-2020 17:43:22.249 | Trace | :: :: :: :: :: :: Setting Cap: PageLoadStrategy | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 674</Trace>
+              <Trace>11-20-2020 17:43:22.251 | Trace | :: :: :: :: :: :: Set PageLoadStrategy to: Normal | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 681</Trace>
+              <Trace>11-20-2020 17:43:22.257 | Trace | :: :: :: :: :: ::  Set Additional Cap key: UnhandledPromptBehavior to value: Default | Ocaramba.Helpers.ProAgDriverCreator.SetAddionalCaps | line: 2409</Trace>
+              <Trace>11-20-2020 17:43:22.259 | Trace | :: :: :: :: :: :: Setting Cap: UnhandledPromptBehavior | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 674</Trace>
+              <Trace>11-20-2020 17:43:22.260 | Trace | :: :: :: :: :: :: Set UnhandledPromptBehavior to: Default | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 681</Trace>
+              <Trace>11-20-2020 17:43:22.262 | Trace | :: :: :: :: :: :: check if special property who's type can't be determined: unhandledpromptbehavior | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 737</Trace>
+              <Trace>11-20-2020 17:43:22.278 | Trace | :: :: :: :: :: ::  Set Additional Cap key: UseInPrivateBrowsing to value: false | Ocaramba.Helpers.ProAgDriverCreator.SetAddionalCaps | line: 2409</Trace>
+              <Trace>11-20-2020 17:43:22.280 | Trace | :: :: :: :: :: :: Setting Cap: UseInPrivateBrowsing | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 674</Trace>
+              <Trace>11-20-2020 17:43:22.281 | Trace | :: :: :: :: :: :: Set UseInPrivateBrowsing to: false | Ocaramba.Helpers.ProAgDriverCreator.CapExists | line: 681</Trace>
+              <Info>11-20-2020 17:43:22.327 | Info | :: :: Get Process with ID: 48084 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillProcessById | line: 301</Info>
+              <Info>11-20-2020 17:43:22.350 | Info | :: :: KillProcessByIDCall Kill Process with ID: 48084 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillProcessById | line: 305</Info>
+              <Info>11-20-2020 17:43:22.354 | Info | :: :: KillProcessByID Done Killing Process ID: 48084 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillProcessById | line: 307</Info>
+              <Trace>11-20-2020 17:43:25.672 | Trace | :: :: :: :: :: :: TestRunCleanupWhenDone set to true | Ocaramba.TestBase.TestBasedStartup | line: 462</Trace>
+              <Trace>11-20-2020 17:43:25.674 | Trace | :: :: :: :: :: :: TestStopDriverWhenDone set to true | Ocaramba.TestBase.TestBasedStartup | line: 463</Trace>
+              <Trace>11-20-2020 17:43:25.696 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary dataSetTableName: ProAgQuoterCreds_quoter | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 476</Trace>
+              <Trace>11-20-2020 17:43:25.698 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary selectStatement: GroupAlias = 'CommonEmpQuoter' | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 477</Trace>
+              <Trace>11-20-2020 17:43:25.700 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.702 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.703 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.705 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.706 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.707 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.708 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.709 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.710 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.711 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary string ignoreCase:  | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 488</Trace>
+              <Trace>11-20-2020 17:43:25.712 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary add data to dictionary row count: 10 | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 502</Trace>
+              <Trace>11-20-2020 17:43:25.714 | Trace | :: :: :: :: :: :: QueryLoadedDataGetDictionary returning dictionary with data | Ocaramba.Helpers.ProAgXlsxReader.QueryLoadedDataGetDictionary | line: 534</Trace>
+            </xmlLog>
+          </GetLocBrowserDriver>
+          <LoginGrpAliasCommonEmpQuoter Description="Test Login as Group Alias: CommonEmpQuoter" Status="Failed" Start="11-20-2020 17:43:25.722" End="11-20-2020 17:43:25.773" Elapsed="00:00:00:00.051">
+            <xmlActions>
+              <Failed>11-20-2020 17:43:25.737 | Failed | -- -- -- TestBaseCaughtException from LoginLogout ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.TestBase.TestBaseCaughtException | line: 515</Failed>
+            </xmlActions>
+            <xmlLog>
+              <Failed>11-20-2020 17:43:25.737 | Failed | -- -- -- TestBaseCaughtException from LoginLogout ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.TestBase.TestBaseCaughtException | line: 515</Failed>
+            </xmlLog>
+          </LoginGrpAliasCommonEmpQuoter>
+          <thatAdd-ScreenShot Description="Take And Save Screen shot" Status="Passed" Start="11-20-2020 17:43:25.774" End="11-20-2020 17:43:28.385" Elapsed="00:00:00:02.611">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:25.783 | Info | :: :: Start Take and Save Screen Shot | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 176</Info>
+              <Info>11-20-2020 17:43:25.785 | Info | :: :: Config FullDesktopScreenShotEnabled False | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 203</Info>
+              <Info>11-20-2020 17:43:25.787 | Info | :: :: Take and Save Selenium Screen Shot | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 208</Info>
+              <Info>11-20-2020 17:43:25.790 | Info | :: :: Start Selenium Screen Shot | Ocaramba.DriverContext.TakeScreenshot | line: 1305</Info>
+              <Info>11-20-2020 17:43:26.284 | Info | :: :: Done Selenium Screen Shot Return Image | Ocaramba.DriverContext.TakeScreenshot | line: 1308</Info>
+              <Trace>11-20-2020 17:43:26.289 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml \TestOutput | Ocaramba.BaseConfiguration.ScreenShotFolder | line: 1929</Trace>
+              <Trace>11-20-2020 17:43:26.292 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:26.295 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Debug>11-20-2020 17:43:26.300 | Debug | :: :: :: :: Length of the file full name is 189 | Ocaramba.Helpers.NameHelper.LogDebug | line: 68</Debug>
+              <Debug>11-20-2020 17:43:26.368 | Debug | :: :: :: :: Wait for file: 'LoginLogout_LogFailRunTry1_2020_11_20_17_43_26_285_browser.png' | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 522</Debug>
+              <Debug>11-20-2020 17:43:27.374 | Debug | :: :: :: :: File exists | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 532</Debug>
+              <Debug>11-20-2020 17:43:27.377 | Debug | :: :: :: :: Checking size of last file &gt; 0 bytes | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 540</Debug>
+              <Info>11-20-2020 17:43:28.380 | Info | :: :: Test failed: screenshot saved to C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\LoginLogout_LogFailRunTry1_2020_11_20_17_43_26_285_browser.png | Ocaramba.DriverContext.SaveScreenshot | line: 71</Info>
+              <Info>11-20-2020 17:43:28.383 | Info | :: :: TakeAndSaveScreenshot Done | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 236</Info>
+            </xmlLog>
+          </thatAdd-ScreenShot>
+          <thatAdd-SavePageSource Description="Save Page Source" Status="Failed" Start="11-20-2020 17:43:28.386" End="11-20-2020 17:43:28.436" Elapsed="00:00:00:00.050">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:28.389 | Info | :: :: Capture Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 103</Info>
+              <Info>11-20-2020 17:43:28.391 | Info | :: :: Check for Existing Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 114</Info>
+              <Trace>11-20-2020 17:43:28.396 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml '\TestOutput | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2031</Trace>
+              <Trace>11-20-2020 17:43:28.398 | Trace | :: :: :: :: :: :: PageSourceFolder: \TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2039</Trace>
+              <Trace>11-20-2020 17:43:28.401 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:28.403 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Debug>11-20-2020 17:43:28.406 | Debug | :: :: :: :: Length of the file full name is 138 | Ocaramba.Helpers.NameHelper.LogDebug | line: 68</Debug>
+              <Trace>11-20-2020 17:43:28.410 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml '\TestOutput | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2031</Trace>
+              <Trace>11-20-2020 17:43:28.412 | Trace | :: :: :: :: :: :: PageSourceFolder: \TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2039</Trace>
+              <Trace>11-20-2020 17:43:28.415 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:28.417 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Info>11-20-2020 17:43:28.419 | Info | :: :: No Existing File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\LoginLogout.html | Ocaramba.DriverContext.SavePageSource | line: 126</Info>
+              <Info>11-20-2020 17:43:28.421 | Info | :: :: Start Capture Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 129</Info>
+              <Fatal>11-20-2020 17:43:28.432 | Fatal | !! !! !! !! !! !! No Page SavePageSource Captured  ExFullName: System.Exception ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+              <Error>11-20-2020 17:43:28.434 | Error | !! !! !! &lt;VERIFY FAILS&gt;
+{0}
+&lt;/VERIFY FAILS&gt;11-20-2020 17:43:25.737 | Failed | -- -- -- TestBaseCaughtException from LoginLogout ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.TestBase.TestBaseCaughtException | line: 515 | Ocaramba.Verify.thatAdd | line: 109</Error>
+            </xmlLog>
+          </thatAdd-SavePageSource>
+          <TestBaseCaughtException Description="Exception: System.Exception caught by test " Status="Passed" Start="11-20-2020 17:43:28.437" End="11-20-2020 17:43:28.440" Elapsed="00:00:00:00.003">
+            <xmlActions />
+            <xmlLog>
+              <Fatal>11-20-2020 17:43:28.438 | Fatal | !! !! !! !! !! !! TestBaseCaughtException from LoginLogout ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+            </xmlLog>
+          </TestBaseCaughtException>
+          <StopThrowException Description="System.Exception" Status="Passed" Start="11-20-2020 17:43:28.441" End="11-20-2020 17:43:28.449" Elapsed="00:00:00:00.008">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:28.444 | Info | :: :: ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.DriverContext.StopThrowException | line: 3599</Info>
+              <Fatal>11-20-2020 17:43:28.446 | Fatal | !! !! !! !! !! !! Called by: TestBaseCaughtException Original Exception Message: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat]     Failed Test Info: Fixture TestClass: QuoterSmokeTests(2-locEdge) TestName: LoginLogout  | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+            </xmlLog>
+          </StopThrowException>
+          <TestBaseCleanup-Start Description="Start Cleanup From TestBase Class" Status="Passed" Start="11-20-2020 17:43:28.450" End="11-20-2020 17:43:28.456" Elapsed="00:00:00:00.006">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:28.452 | Info | :: :: TestBase.cs TestBaseCleanup called from ProjectTestBase | Ocaramba.TestBase.TestBaseCleanUp | line: 543</Info>
+            </xmlLog>
+          </TestBaseCleanup-Start>
+          <TestClenup Description="Test Cleanup and logging" Status="Passed" Start="11-20-2020 17:43:28.457" End="11-20-2020 17:43:28.469" Elapsed="00:00:00:00.012">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:28.460 | Info | :: :: Cleanup Flag: true | Ocaramba.DriverContext.TestCleanUp | line: 3468</Info>
+              <Info>11-20-2020 17:43:28.462 | Info | :: :: Location: local | Ocaramba.DriverContext.TestCleanUp | line: 3479</Info>
+              <Info>11-20-2020 17:43:28.464 | Info | :: :: LocalLog IsTestFailed: True | Ocaramba.DriverContext.TestCleanUp | line: 3549</Info>
+            </xmlLog>
+          </TestClenup>
+          <SaveTestDetailsIfFailed Description="On Cleanup Take Screen shot and capture page source" Status="Failed" Start="11-20-2020 17:43:28.470" End="11-20-2020 17:43:30.002" Elapsed="00:00:00:01.532">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:28.478 | Info | :: :: Start Take and Save Screen Shot | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 176</Info>
+              <Info>11-20-2020 17:43:28.480 | Info | :: :: Config FullDesktopScreenShotEnabled False | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 203</Info>
+              <Info>11-20-2020 17:43:28.481 | Info | :: :: Take and Save Selenium Screen Shot | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 208</Info>
+              <Info>11-20-2020 17:43:28.482 | Info | :: :: Start Selenium Screen Shot | Ocaramba.DriverContext.TakeScreenshot | line: 1305</Info>
+              <Info>11-20-2020 17:43:28.893 | Info | :: :: Done Selenium Screen Shot Return Image | Ocaramba.DriverContext.TakeScreenshot | line: 1308</Info>
+              <Trace>11-20-2020 17:43:28.897 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml \TestOutput | Ocaramba.BaseConfiguration.ScreenShotFolder | line: 1929</Trace>
+              <Trace>11-20-2020 17:43:28.899 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:28.901 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Debug>11-20-2020 17:43:28.903 | Debug | :: :: :: :: Length of the file full name is 202 | Ocaramba.Helpers.NameHelper.LogDebug | line: 68</Debug>
+              <Debug>11-20-2020 17:43:28.947 | Debug | :: :: :: :: Wait for file: 'LoginLogout_SaveTestDetailsIfTestFailed_2020_11_20_17_43_28_894_browser.png' | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 522</Debug>
+              <Debug>11-20-2020 17:43:28.949 | Debug | :: :: :: :: File exists | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 532</Debug>
+              <Debug>11-20-2020 17:43:28.950 | Debug | :: :: :: :: Checking size of last file &gt; 0 bytes | Ocaramba.Helpers.FilesHelper.WaitForFileOfGivenName | line: 540</Debug>
+              <Info>11-20-2020 17:43:29.953 | Info | :: :: Test failed: screenshot saved to C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\LoginLogout_SaveTestDetailsIfTestFailed_2020_11_20_17_43_28_894_browser.png | Ocaramba.DriverContext.SaveScreenshot | line: 71</Info>
+              <Info>11-20-2020 17:43:29.956 | Info | :: :: TakeAndSaveScreenshot Done | Ocaramba.DriverContext.TakeAndSaveScreenshot | line: 236</Info>
+              <Info>11-20-2020 17:43:29.959 | Info | :: :: Capture Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 103</Info>
+              <Info>11-20-2020 17:43:29.962 | Info | :: :: Check for Existing Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 114</Info>
+              <Trace>11-20-2020 17:43:29.966 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml '\TestOutput | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2031</Trace>
+              <Trace>11-20-2020 17:43:29.969 | Trace | :: :: :: :: :: :: PageSourceFolder: \TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2039</Trace>
+              <Trace>11-20-2020 17:43:29.971 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:29.973 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Debug>11-20-2020 17:43:29.976 | Debug | :: :: :: :: Length of the file full name is 138 | Ocaramba.Helpers.NameHelper.LogDebug | line: 68</Debug>
+              <Trace>11-20-2020 17:43:29.980 | Trace | :: :: :: :: :: :: PageSourceFolder value from AutoProjConfig.xml '\TestOutput | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2031</Trace>
+              <Trace>11-20-2020 17:43:29.982 | Trace | :: :: :: :: :: :: PageSourceFolder: \TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge | Ocaramba.BaseConfiguration.PageSourceFolder | line: 2039</Trace>
+              <Trace>11-20-2020 17:43:29.984 | Trace | :: :: :: :: :: :: appConfigValue '\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge', currentFolder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug', UseCurrentDirectory 'True' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 826</Trace>
+              <Trace>11-20-2020 17:43:29.987 | Trace | :: :: :: :: :: :: Returned folder 'C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge' | Ocaramba.Helpers.FilesHelper.GetFolder | line: 854</Trace>
+              <Info>11-20-2020 17:43:29.989 | Info | :: :: No Existing File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\LoginLogout.html | Ocaramba.DriverContext.SavePageSource | line: 126</Info>
+              <Info>11-20-2020 17:43:29.991 | Info | :: :: Start Capture Page Source From Driver | Ocaramba.DriverContext.SavePageSource | line: 129</Info>
+              <Fatal>11-20-2020 17:43:29.998 | Fatal | !! !! !! !! !! !! No Page SavePageSource Captured  ExFullName: System.Exception ExMsg: File key LocalAutoProjConfig Error getting Project Env value xpath: //SettingsProject/ProAgQuoter/ProjectEnvUrls//*[@ti-uat] | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+              <Info>11-20-2020 17:43:30.000 | Info | :: :: No Page Source Captured or added to list | Ocaramba.DriverContext.SaveTestDetailsIfTestFailed | line: 3406</Info>
+            </xmlLog>
+          </SaveTestDetailsIfFailed>
+          <SaveAttachmentsToTestContext Description="Save any Screen Shots Taken or Page Source Captured To TestContext" Status="Passed" Start="11-20-2020 17:43:30.003" End="11-20-2020 17:43:30.013" Elapsed="00:00:00:00.010">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:30.006 | Info | :: :: Uploading file C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\LoginLogout_SaveTestDetailsIfTestFailed_2020_11_20_17_43_28_894_browser.png to test context | Ocaramba.DriverContext.SaveAttachmentsToTestContext | line: 3351</Info>
+              <Info>11-20-2020 17:43:30.009 | Info | :: :: Cleanup Done | Ocaramba.DriverContext.TestCleanUp | line: 3588</Info>
+            </xmlLog>
+          </SaveAttachmentsToTestContext>
+          <StopDriver Description="This methods stops driver end of test or if exception trapped" Status="Passed" Start="11-20-2020 17:43:30.014" End="11-20-2020 17:43:30.060" Elapsed="00:00:00:00.046">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:30.017 | Info | :: :: Stop: Called From TestBaseCleanUp bStopDriver Flag value: true | Ocaramba.DriverContext.Stop | line: 3213</Info>
+              <Info>11-20-2020 17:43:30.020 | Info | :: :: Stop Local driver | Ocaramba.DriverContext.Stop | line: 3226</Info>
+              <Info>11-20-2020 17:43:30.022 | Info | :: :: clear browsers local storage and session storage | Ocaramba.DriverContext.Stop | line: 3232</Info>
+              <Fatal>11-20-2020 17:43:30.053 | Fatal | !! !! !! !! !! !! Fatal Exception Clearing Local Storage ExMsg: &lt;unknown&gt;: Failed to read the 'localStorage' property from 'Window': Storage is disabled inside 'data:' URLs.
+  (Session info: MicrosoftEdge=86.0.622.69) | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+              <Fatal>11-20-2020 17:43:30.055 | Fatal | !! !! !! !! !! !! Clear Session and Local Storage Before Driver Quit ExMsg: &lt;unknown&gt;: Failed to read the 'localStorage' property from 'Window': Storage is disabled inside 'data:' URLs.
+  (Session info: MicrosoftEdge=86.0.622.69) | Ocaramba.Logger.ProAgXmlRsltLogger.LogFatal | line: 968</Fatal>
+            </xmlLog>
+          </StopDriver>
+          <KillProcByNameThisThread Description="Kill Browser and Driver started on this thread" Status="Passed" Start="11-20-2020 17:43:30.062" End="11-20-2020 17:43:32.685" Elapsed="00:00:00:02.623">
+            <xmlActions />
+            <xmlLog>
+              <Info>11-20-2020 17:43:30.065 | Info | :: :: See if Browser: msedge is running | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 417</Info>
+              <Info>11-20-2020 17:43:30.076 | Info | :: :: This Thread Found 7 msedge Browsers | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 419</Info>
+              <Info>11-20-2020 17:43:30.079 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-0 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:30.082 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-0 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:30.085 | Info | :: :: Killing Proc: msedge ID: 34920 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 435</Info>
+              <Info>11-20-2020 17:43:30.088 | Info | :: :: Done Killing Proc: msedge ID: 34920 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 440</Info>
+              <Info>11-20-2020 17:43:30.590 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-1 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:30.592 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-1 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:30.594 | Info | :: :: Killing Proc: msedge ID: 36504 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 435</Info>
+              <Info>11-20-2020 17:43:30.596 | Info | :: :: Done Killing Proc: msedge ID: 36504 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 440</Info>
+              <Info>11-20-2020 17:43:31.110 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-2 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:31.113 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-2 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:31.115 | Info | :: :: Killing Proc: msedge ID: 48168 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 435</Info>
+              <Info>11-20-2020 17:43:31.117 | Info | :: :: Done Killing Proc: msedge ID: 48168 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 440</Info>
+              <Info>11-20-2020 17:43:31.620 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-3 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:31.622 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-3 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:31.624 | Info | :: :: Killing Proc: msedge ID: 32308 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 435</Info>
+              <Info>11-20-2020 17:43:31.627 | Info | :: :: Done Killing Proc: msedge ID: 32308 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 440</Info>
+              <Info>11-20-2020 17:43:32.131 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-4 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:32.133 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-4 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:32.137 | Info | :: :: Has Already Exited Proc: msedge ID: 38332 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 458</Info>
+              <Info>11-20-2020 17:43:32.140 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-5 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:32.143 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-5 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:32.146 | Info | :: :: Has Already Exited Proc: msedge ID: 16624 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 458</Info>
+              <Info>11-20-2020 17:43:32.148 | Info | :: :: Chk Brws ThisThreadKey: ThisThreadBrws-msedge-0-1007-6 = BuiltKeyName: ThisThreadBrws-msedge-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 425</Info>
+              <Info>11-20-2020 17:43:32.151 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadBrws-msedge-0-1007-6 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 431</Info>
+              <Info>11-20-2020 17:43:32.154 | Info | :: :: Has Already Exited Proc: msedge ID: 48760 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 458</Info>
+              <Info>11-20-2020 17:43:32.157 | Info | :: :: See if Driver: msedgedriver is running | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 485</Info>
+              <Info>11-20-2020 17:43:32.172 | Info | :: :: Chk Drv ThisThreadKey: ThisThreadDrv-msedgedriver-0-1007 = BuiltKeyName: ThisThreadDrv-msedgedriver-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 492</Info>
+              <Info>11-20-2020 17:43:32.175 | Info | :: :: This Thread Found In Dictionary Key:ThisThreadDrv-msedgedriver-0-1007 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 495</Info>
+              <Info>11-20-2020 17:43:32.179 | Info | :: :: Killing Proc: msedgedriver ID: 48712 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 501</Info>
+              <Info>11-20-2020 17:43:32.682 | Info | :: :: Done Killing Proc: msedgedriver ID: 48712 | Ocaramba.Helpers.ProAgDiagProcessHelper.KillByNameAnyThisTreadProcesses | line: 508</Info>
+              <Info>11-20-2020 17:43:32.684 | Info | :: :: Stop Driver Done | Ocaramba.DriverContext.Stop | line: 3333</Info>
+            </xmlLog>
+          </KillProcByNameThisThread>
+          <AddToXmlRollup-Start Description="Start XML Result Rollup Process" Status="Passed" Start="11-20-2020 17:43:32.687" End="11-20-2020 17:43:32.689" Elapsed="00:00:00:00.002">
+            <xmlActions />
+            <xmlLog />
+          </AddToXmlRollup-Start>
+          <AddToXmlRollup Description="Add Relapse Test Result to XmlRollupFile" Status="Passed" Start="11-20-2020 17:43:32.691" End="11-20-2020 17:43:32.789" Elapsed="00:00:00:00.098">
+            <xmlActions>
+              <Step>11-20-2020 17:43:32.695 | Step | ++ WaitToOpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2924</Step>
+              <Step>11-20-2020 17:43:32.701 | Step | ++ Waited 0 sec to open rollup: z-ti-uat-ProAgQuoter-Lock.txt | Ocaramba.Logger.ProAgXmlRsltLogger.isRollupReadyForUpdate | line: 2887</Step>
+              <Passed>11-20-2020 17:43:32.703 | Passed | ++ ++ ++ isRollupReadyForUpdate True File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2931</Passed>
+              <Step>11-20-2020 17:43:32.706 | Step | ++ OpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2935</Step>
+              <Step>11-20-2020 17:43:32.708 | Step | ++  Success OpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2937</Step>
+              <Step>11-20-2020 17:43:32.712 | Step | ++ addSuiteNdToXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1628</Step>
+              <Passed>11-20-2020 17:43:32.715 | Passed | ++ ++ ++ Does Not Exists Suite xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1637</Passed>
+              <Step>11-20-2020 17:43:32.723 | Step | ++ Append new Suite Node to Rollup Name: QuoterSmokeTests final xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1644</Step>
+              <Passed>11-20-2020 17:43:32.726 | Passed | ++ ++ ++ Success Append Node Name: QuoterSmokeTests final xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1646</Passed>
+              <Step>11-20-2020 17:43:32.734 | Step | ++ addOsDtDevicedToSuiteNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1672</Step>
+              <Step>11-20-2020 17:43:32.736 | Step | ++ Fix Desktop Or Device CurFixtureDtOrMbl: desktop | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1687</Step>
+              <Step>11-20-2020 17:43:32.738 | Step | ++ Built xPathOsDtNd: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1688</Step>
+              <Step>11-20-2020 17:43:32.739 | Step | ++ Built xPathDeviceNd: /Proj-ProAgQuoter/QuoterSmokeTests/ | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1689</Step>
+              <Passed>11-20-2020 17:43:32.741 | Passed | ++ ++ ++ Does Not Exists Os Desktop xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1749</Passed>
+              <Step>11-20-2020 17:43:32.745 | Step | ++ Append new Os Node to Rollup Name: WINDOWS_10 final xPath: /QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1765</Step>
+              <Step>11-20-2020 17:43:32.747 | Step | ++ Success Append new Os Node to Rollup Name: WINDOWS_10 final xPath: /QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1767</Step>
+              <Step>11-20-2020 17:43:32.750 | Step | ++ OS Node Set Attribute values xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1770</Step>
+              <Step>11-20-2020 17:43:32.753 | Step | ++ addBrowserToOsDtNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1876</Step>
+              <Passed>11-20-2020 17:43:32.755 | Passed | ++ ++ ++ Does Not Exists Browser xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1888</Passed>
+              <Step>11-20-2020 17:43:32.758 | Step | ++ Append new BrowserType Node to Rollup Name: EDGE final xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1904</Step>
+              <Step>11-20-2020 17:43:32.760 | Step | ++ Success Append new BrowserType Node to Rollup Name: EDGE final xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1906</Step>
+              <Step>11-20-2020 17:43:32.763 | Step | ++ Browser Node ESet Attribute values xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1909</Step>
+              <Step>11-20-2020 17:43:32.767 | Step | ++ addRelpaceTestNdToBrowserNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 1983</Step>
+              <Passed>11-20-2020 17:43:32.769 | Passed | ++ ++ ++ Single Result XML Doc Found | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 1999</Passed>
+              <Step>11-20-2020 17:43:32.771 | Step | ++ Single Result Path Name: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\locEdge-LoginLogout.xml | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2001</Step>
+              <Step>11-20-2020 17:43:32.774 | Step | ++ Single Result XML Doc Has Test: LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2002</Step>
+              <Passed>11-20-2020 17:43:32.776 | Passed | ++ ++ ++ Single Result XML Doc Found Test Node : LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2007</Passed>
+              <Step>11-20-2020 17:43:32.780 | Step | ++ Find Rollup Browser Test Node xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2014</Step>
+              <Passed>11-20-2020 17:43:32.783 | Passed | ++ ++ ++ Found Rollup Browser Test Node xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2019</Passed>
+              <Step>11-20-2020 17:43:32.785 | Step | ++ Find Rollup Test: LoginLogout xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE/LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2021</Step>
+              <Passed>11-20-2020 17:43:32.787 | Passed | ++ ++ ++ Not Found Add Rollup Test: LoginLogout xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE/LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2027</Passed>
+            </xmlActions>
+            <xmlLog>
+              <Step>11-20-2020 17:43:32.695 | Step | ++ WaitToOpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2924</Step>
+              <Step>11-20-2020 17:43:32.701 | Step | ++ Waited 0 sec to open rollup: z-ti-uat-ProAgQuoter-Lock.txt | Ocaramba.Logger.ProAgXmlRsltLogger.isRollupReadyForUpdate | line: 2887</Step>
+              <Passed>11-20-2020 17:43:32.703 | Passed | ++ ++ ++ isRollupReadyForUpdate True File: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2931</Passed>
+              <Step>11-20-2020 17:43:32.706 | Step | ++ OpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2935</Step>
+              <Step>11-20-2020 17:43:32.708 | Step | ++  Success OpenRollup: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ti-uat-ProAgQuoter.xml | Ocaramba.Logger.ProAgXmlRsltLogger.WaitOpenXmlRollup | line: 2937</Step>
+              <Step>11-20-2020 17:43:32.712 | Step | ++ addSuiteNdToXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1628</Step>
+              <Passed>11-20-2020 17:43:32.715 | Passed | ++ ++ ++ Does Not Exists Suite xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1637</Passed>
+              <Step>11-20-2020 17:43:32.723 | Step | ++ Append new Suite Node to Rollup Name: QuoterSmokeTests final xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1644</Step>
+              <Passed>11-20-2020 17:43:32.726 | Passed | ++ ++ ++ Success Append Node Name: QuoterSmokeTests final xPath: /Proj-ProAgQuoter/QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addSuiteNdToXmlRollup | line: 1646</Passed>
+              <Step>11-20-2020 17:43:32.734 | Step | ++ addOsDtDevicedToSuiteNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1672</Step>
+              <Step>11-20-2020 17:43:32.736 | Step | ++ Fix Desktop Or Device CurFixtureDtOrMbl: desktop | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1687</Step>
+              <Step>11-20-2020 17:43:32.738 | Step | ++ Built xPathOsDtNd: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1688</Step>
+              <Step>11-20-2020 17:43:32.739 | Step | ++ Built xPathDeviceNd: /Proj-ProAgQuoter/QuoterSmokeTests/ | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1689</Step>
+              <Passed>11-20-2020 17:43:32.741 | Passed | ++ ++ ++ Does Not Exists Os Desktop xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1749</Passed>
+              <Step>11-20-2020 17:43:32.745 | Step | ++ Append new Os Node to Rollup Name: WINDOWS_10 final xPath: /QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1765</Step>
+              <Step>11-20-2020 17:43:32.747 | Step | ++ Success Append new Os Node to Rollup Name: WINDOWS_10 final xPath: /QuoterSmokeTests | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1767</Step>
+              <Step>11-20-2020 17:43:32.750 | Step | ++ OS Node Set Attribute values xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addOsDtDevicedToSuiteNdXmlRollup | line: 1770</Step>
+              <Step>11-20-2020 17:43:32.753 | Step | ++ addBrowserToOsDtNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1876</Step>
+              <Passed>11-20-2020 17:43:32.755 | Passed | ++ ++ ++ Does Not Exists Browser xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1888</Passed>
+              <Step>11-20-2020 17:43:32.758 | Step | ++ Append new BrowserType Node to Rollup Name: EDGE final xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1904</Step>
+              <Step>11-20-2020 17:43:32.760 | Step | ++ Success Append new BrowserType Node to Rollup Name: EDGE final xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10 | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1906</Step>
+              <Step>11-20-2020 17:43:32.763 | Step | ++ Browser Node ESet Attribute values xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addBrowserToOsDtNdXmlRollup | line: 1909</Step>
+              <Step>11-20-2020 17:43:32.767 | Step | ++ addRelpaceTestNdToBrowserNdXmlRollup | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 1983</Step>
+              <Passed>11-20-2020 17:43:32.769 | Passed | ++ ++ ++ Single Result XML Doc Found | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 1999</Passed>
+              <Step>11-20-2020 17:43:32.771 | Step | ++ Single Result Path Name: C:\TFS\Portal\src\trunk\ProAg.Portal.Web.UI.POM\ProAgQuoter\bin\Debug\TestOutput\ti-uat\QuoterSmokeTests\LoginLogout\Local\Edge\locEdge-LoginLogout.xml | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2001</Step>
+              <Step>11-20-2020 17:43:32.774 | Step | ++ Single Result XML Doc Has Test: LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2002</Step>
+              <Passed>11-20-2020 17:43:32.776 | Passed | ++ ++ ++ Single Result XML Doc Found Test Node : LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2007</Passed>
+              <Step>11-20-2020 17:43:32.780 | Step | ++ Find Rollup Browser Test Node xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2014</Step>
+              <Passed>11-20-2020 17:43:32.783 | Passed | ++ ++ ++ Found Rollup Browser Test Node xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2019</Passed>
+              <Step>11-20-2020 17:43:32.785 | Step | ++ Find Rollup Test: LoginLogout xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE/LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2021</Step>
+              <Passed>11-20-2020 17:43:32.787 | Passed | ++ ++ ++ Not Found Add Rollup Test: LoginLogout xPath: /Proj-ProAgQuoter/QuoterSmokeTests/WINDOWS_10/EDGE/LoginLogout | Ocaramba.Logger.ProAgXmlRsltLogger.addRelpaceTestNdToBrowserNdXmlRollup | line: 2027</Passed>
+            </xmlLog>
+          </AddToXmlRollup>
+        </LoginLogout>
+      </EDGE>
+    </WINDOWS_10>
+  </QuoterSmokeTests>
+</Proj-ProAgQuoter>

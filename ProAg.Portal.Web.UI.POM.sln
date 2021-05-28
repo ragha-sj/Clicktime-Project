@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAg.Portal.Web.UI.POM", "ProAg.Portal.Web.UI.POM\ProAg.Portal.Web.UI.POM.csproj", "{63C5D7A0-BB2B-46AF-B1E4-431BE8A41D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocaramba", "Ocaramba\Ocaramba.csproj", "{36CB313E-552B-452E-98D7-3B6E9AB74235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProAgTests", "MyProAgTests\MyProAgTests.csproj", "{72951A07-7A80-4C05-A9E0-8B92CB790F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocaramba.Tests.PageObjects", "Ocaramba.Tests.PageObjects\Ocaramba.Tests.PageObjects.csproj", "{9A6F1AA8-A43B-444B-9611-8C66E369181E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAgMapping", "ProAgMapping\ProAgMapping.csproj", "{EA8DF3C0-DC56-42D5-8F18-8BA77FD979A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDrivers", "WebDrivers", "{9BB38FAE-026F-4B7D-A984-4223C9D6BC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edge", "Edge", "{6C912365-DDF8-4E34-A267-917A5EB7A76D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chrome", "Chrome", "{7523A929-42F1-4DAA-A5FA-160B5940B042}"
+	ProjectSection(SolutionItems) = preProject
+		WebDrivers\Chrome\chromedriver.exe = WebDrivers\Chrome\chromedriver.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Firefox", "Firefox", "{E594A4C7-39DD-42AC-8E92-7D9DCE8C11E2}"
+	ProjectSection(SolutionItems) = preProject
+		WebDrivers\Firefox\geckodriver.exe = WebDrivers\Firefox\geckodriver.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IE", "IE", "{27923441-5E1D-4B2E-8425-4A0576570ED7}"
+	ProjectSection(SolutionItems) = preProject
+		WebDrivers\IE\IEDriverServer.exe = WebDrivers\IE\IEDriverServer.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BrowserFixtures", "BrowserFixtures", "{6DA611C7-246E-4F7D-A641-3C71F787900C}"
+	ProjectSection(SolutionItems) = preProject
+		BrowserFixtures\AutoFixtures.xml = BrowserFixtures\AutoFixtures.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAgQuoter", "ProAgQuoter\ProAgQuoter.csproj", "{7188340B-52FC-4215-BC51-1FC2E8AE811B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAgWorks", "ProAgWorks\ProAgWorks.csproj", "{CE5F895C-EC89-4E9B-B97F-4AC986B70CBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoConfig", "AutoConfig", "{289E8E2A-6CE9-4A05-A264-6E25EEDEDAA2}"
+	ProjectSection(SolutionItems) = preProject
+		AutoConfig\AutoProjConfig.xml = AutoConfig\AutoProjConfig.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EdgeChromium", "EdgeChromium", "{8594D73B-4CFB-4023-B310-75A37E7A842E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C5D7A0-BB2B-46AF-B1E4-431BE8A41D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C5D7A0-BB2B-46AF-B1E4-431BE8A41D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C5D7A0-BB2B-46AF-B1E4-431BE8A41D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C5D7A0-BB2B-46AF-B1E4-431BE8A41D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CB313E-552B-452E-98D7-3B6E9AB74235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CB313E-552B-452E-98D7-3B6E9AB74235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CB313E-552B-452E-98D7-3B6E9AB74235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CB313E-552B-452E-98D7-3B6E9AB74235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72951A07-7A80-4C05-A9E0-8B92CB790F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72951A07-7A80-4C05-A9E0-8B92CB790F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72951A07-7A80-4C05-A9E0-8B92CB790F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72951A07-7A80-4C05-A9E0-8B92CB790F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6F1AA8-A43B-444B-9611-8C66E369181E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6F1AA8-A43B-444B-9611-8C66E369181E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6F1AA8-A43B-444B-9611-8C66E369181E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6F1AA8-A43B-444B-9611-8C66E369181E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8DF3C0-DC56-42D5-8F18-8BA77FD979A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8DF3C0-DC56-42D5-8F18-8BA77FD979A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8DF3C0-DC56-42D5-8F18-8BA77FD979A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8DF3C0-DC56-42D5-8F18-8BA77FD979A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7188340B-52FC-4215-BC51-1FC2E8AE811B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7188340B-52FC-4215-BC51-1FC2E8AE811B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7188340B-52FC-4215-BC51-1FC2E8AE811B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7188340B-52FC-4215-BC51-1FC2E8AE811B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5F895C-EC89-4E9B-B97F-4AC986B70CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5F895C-EC89-4E9B-B97F-4AC986B70CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5F895C-EC89-4E9B-B97F-4AC986B70CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5F895C-EC89-4E9B-B97F-4AC986B70CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C912365-DDF8-4E34-A267-917A5EB7A76D} = {9BB38FAE-026F-4B7D-A984-4223C9D6BC84}
+		{7523A929-42F1-4DAA-A5FA-160B5940B042} = {9BB38FAE-026F-4B7D-A984-4223C9D6BC84}
+		{E594A4C7-39DD-42AC-8E92-7D9DCE8C11E2} = {9BB38FAE-026F-4B7D-A984-4223C9D6BC84}
+		{27923441-5E1D-4B2E-8425-4A0576570ED7} = {9BB38FAE-026F-4B7D-A984-4223C9D6BC84}
+		{8594D73B-4CFB-4023-B310-75A37E7A842E} = {6C912365-DDF8-4E34-A267-917A5EB7A76D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D97EE153-D54A-40AC-8DEC-925526D2337B}
+	EndGlobalSection
+EndGlobal
